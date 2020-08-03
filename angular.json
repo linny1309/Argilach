@@ -21,12 +21,20 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/c-dashboard",
+              "src/app/c-left-menu",
+              "src/app/c-right-menu",
+              "src/app/c-top-bar"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/javascript/p-dashboard.component.js",
+              "src/assets/javascript/styles.js",
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,12 +93,20 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/c-dashboard",
+              "src/app/c-left-menu",
+              "src/app/c-right-menu",
+              "src/app/c-top-bar"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +135,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Argilach"
+    }
+  },
+  "defaultProject": "Argilach",
+  "cli": {
+    "analytics": "189a6742-0483-4297-9172-caa17e2befd8"
+  }
 }

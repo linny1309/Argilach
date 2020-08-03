@@ -1,0 +1,245 @@
+.top-bar {
+    z-index: 20;
+    width: 100vw;
+    background-color: rgb(90, 90, 90);
+}
+
+#menuButton {
+    position: fixed;
+    top: .2vh;
+    margin-top: .1vh;
+    margin-top: 0.01vh;
+    margin-left: 1vh;
+    z-index: 10;
+    font-size: 5vh;
+    color: white;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.c-top-bar {
+    z-index: 20;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(90, 90, 90);
+}
+
+.page-title {
+    border-radius: .4vh;
+    padding-top: .5vh;
+    white-space: nowrap;
+    position: absolute;
+    width: 10em;
+    height: 3vh;
+    font-size: 2.5vh; 
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.7vh;
+    margin-left: 11vh;
+    font-weight: bold;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#pageIcon {
+    border-radius: 0.6vh;
+    text-align: center;
+    font-size: 2.5vh;
+    padding-top: .5vh;
+    white-space: nowrap;
+    position: absolute;
+    width: 4vh;
+    height: 3vh;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    cursor: pointer;
+    margin-top: 0.7vh;
+    margin-left: 6.4vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.top-header {
+    position: fixed;
+    top: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 4;
+    height: 1vh;
+    font-size: 2.5vh; 
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+/* <body></body> Section */
+
+  .right-items {
+    padding-top: .3vh;
+    padding-bottom: .3vh;
+    border-radius: .4vh;
+    visibility: visible;
+    display: flex;
+    padding-left: 1.1vh;
+    z-index: 10;;
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    top: .53vh;
+    margin-top: .1vh;
+    right: .3em;
+    height: 3.5vh;
+    color: rgb(109, 109, 109);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  }
+
+  .right-items i:hover {
+    color: #fefefa;
+  }
+
+  hr {
+  }
+  
+
+  #topBarI {
+    float: middle;
+    position: sticky;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    color: white;
+    margin-top: 0.5vh
+  }
+
+  #xButton {
+    cursor: pointer;
+    font-size: 4vh;
+    padding-left: .08em;
+    color: rgb(109, 109, 109);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  }
+
+  #xButton:hover {
+    color: #fefefa;
+  }
+
+  #toolButton {
+    margin-top: .5vh;
+    cursor: pointer;
+    display: inline;
+    font-size: 3vh;
+    color: rgb(109, 109, 109);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  }
+
+a:hover {
+  cursor: pointer;
+}
+
+.header-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-height: 600px) {
+  .right-items {
+    display: none;
+  }
+
+  #mobileI {
+    visibility: visible !important;
+  }
+
+  #mobileI {
+    visibility: visible !important;
+  }
+}
+
+  @media only screen and (max-width: 900px) {
+  .right-items {
+    display: none;
+  }
+
+  #mobileI {
+    visibility: visible !important;
+  }
+
+  .page-title {
+    visibility: hidden;
+}
+
+  #pageIcon {
+    visibility: hidden;
+  }
+
+  .top-header {
+    margin-top: 0.5vh;
+    font-size: 1.8vh;
+  }
+  
+}
+
+#mobileI {
+  visibility: hidden;
+  position: fixed;
+  top: .2vh;
+  margin-top: .1vh;
+  margin-top: 0.01vh;
+  z-index: 10;
+  font-size: 4.7vh;
+  color: white;
+  cursor: pointer;
+  right: .2em;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently */
+}
+

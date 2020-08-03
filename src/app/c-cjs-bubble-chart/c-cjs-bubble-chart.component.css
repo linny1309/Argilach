@@ -1,0 +1,46 @@
+#container {
+    margin: 0;
+    padding: 0;
+  }
+
+.bubble-chart {
+    left: 0em;;
+    z-index: 7;
+    position: fixed;
+    border-radius: 0.6vh;
+}
+
+#myBubbleChart {
+    background: rgb(54, 54, 54);
+    border-radius: 0.6vh;
+}
+
+.visual-padding {
+    width: 1vw;
+}
+
+@media only screen and (max-width: 470px) {
+    #myBubbleChart {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    body {
+        width: 82%;
+    }
+    #myBubbleChart {
+        width: 78%;
+        margin-left: 10.2%;
+    }
+}
+
+@media only screen and (min-height: 500px) {
+    body {
+        width: 88%;
+    }
+    #myBubbleChart {
+        width: 100%;
+        margin-left: 6%;
+    }
+}

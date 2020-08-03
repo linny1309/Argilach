@@ -1,0 +1,91 @@
+th, td, p h3 {
+    top: 0;
+    position: absolute;
+    color: white;
+    color: white !important;
+}
+table, th, td {
+    top: 0;
+    position: absolute;
+    border-style: solid;
+    border: solid 1px #ddd;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+    height: 100%;
+    color: white !important;
+}
+th {
+    top: 0;
+    position: absolute;
+    font-weight:bold;
+    color: white;
+}
+
+button {
+    display: none;
+}
+
+input {
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+tbody {
+    top: 0;
+    position: absolute;
+    color: white;
+}
+
+tr {
+    top: 0;
+    position: absolute;
+    color: honeydew;
+}
+
+td {
+    top: 0;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.table-title {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 0.3em;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download-click {
+    top: 12vh;
+    position: fixed;
+    z-index: 100;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#tableBody {
+    z-index: 100;;
+}
+
+.download-span {
+    z-index: 500;
+}
+
+

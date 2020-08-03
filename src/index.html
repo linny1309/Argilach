@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script src="../utils.js"></script>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="jquery.counterup.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <meta charset="utf-8">
   <title>Argilach</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="./js/countUp.min.js" type="module"></script>
+  <script src="./main.js" type="module"></script>
 </head>
-<body>
+<body onresize="onResize()" (window:resize)="onResizeType()" id="mainBody">
+  <!-- <canvas id=c class="animated-background"></canvas> !-->
   <app-root></app-root>
 </body>
 </html>

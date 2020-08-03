@@ -1,0 +1,62 @@
+<c-top-bar></c-top-bar>
+<c-left-menu></c-left-menu>
+<c-right-menu></c-right-menu>
+<c-filter-menu></c-filter-menu>
+<c-calendar id="cCalendar"></c-calendar>
+
+<div class="gen-table-container" id="genTableContainer">
+    <c-gen-table id="genTable"></c-gen-table>
+</div>
+
+<!-- <div class="chart-frame">Content</div> !-->
+
+<body id="pDashboard">
+    <div class="content" id="content">
+        <div class="chart-container" id="chartContainer">
+            <div class="chart-grouping">
+                <br>
+                <c-cjs-bar-chart class="c-cjs-chart" id="chart0"></c-cjs-bar-chart>
+                <br>
+                <c-cjs-line-chart class="c-cjs-chart" id="chart1"></c-cjs-line-chart>
+                <br>
+                <c-cjs-pie-chart class="c-cjs-chart" id="chart2"></c-cjs-pie-chart>
+                <br>
+                <c-cjs-bubble-chart class="c-cjs-chart" id="chart3"></c-cjs-bubble-chart>
+                <br>
+                <c-cjs-scatter-plot class="c-cjs-chart" id="chart4"></c-cjs-scatter-plot>
+                <br>
+                <c-cjs-radar-chart class="c-cjs-chart" id="chart5"></c-cjs-radar-chart>
+                <br>
+                <c-cjs-combo-chart class="c-cjs-chart" id="chart6"></c-cjs-combo-chart>
+                <br>
+                <c-cjs-gran-chart class="c-cjs-chart" id="chart7"></c-cjs-gran-chart>
+                <br>
+            </div>
+        </div>
+        <div class="kpi-body" id="kpiBody">
+            <div class="kpi-group" id="kpiGroup">
+                <div class="category" id="topCat"><span>Digital KPIs</span></div>
+                <c-kpi-card id="topKpi" (click)="setPageTS(0)"></c-kpi-card>
+                <div id="subKpi">
+                    <c-kpi-card id="kpiCard1" class="sub-kpi" (click)="setPageTS(1)"></c-kpi-card>
+                    <div class="category"><span>Brand Performance</span></div>
+                    <c-kpi-card id="kpiCard2" class="sub-kpi" (click)="setPageTS(2)"></c-kpi-card>
+                    <c-kpi-card id="kpiCard3" class="sub-kpi" (click)="setPageTS(3)"></c-kpi-card>
+                    <div class="category"><span>Customer Dynamics</span></div>
+                    <c-kpi-card id="kpiCard4" class="sub-kpi" (click)="setPageTS(4)"></c-kpi-card>
+                    <c-kpi-card id="kpiCard5" class="sub-kpi" (click)="setPageTS(5)"></c-kpi-card>
+                    <c-kpi-card id="kpiCard6" class="sub-kpi" (click)="setPageTS(6)"></c-kpi-card>
+                    <div class="category"><span>Granular Data</span></div>
+                    <c-kpi-card id="kpiCard7" class="sub-kpi" (click)="setPageTS(7)"></c-kpi-card>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <c-comment id="pageComment"></c-comment>
+    <div class="pixel-alert-container" id="pixelAlertContainer">
+        <div class="pixel-alert" id="pixelAlert">Value</div>
+        <div class="pixel-alert-text" id=pixelAlertText>(Maximize your screen or switch to landscape mode)</div>
+    </div>
+</body>

@@ -1,0 +1,248 @@
+.c-kpi-card {
+    background-color: rgba(39, 39, 39, 0.99);
+    width: 74.5vw;
+    height: 11.5vh;
+    position: relative;
+    border-radius: 0.6vh;
+    opacity: 0.99;
+}
+
+.kpi-title {
+    white-space: nowrap;
+    border-radius: 0.3vh;
+    top: 0;
+    opacity: .8;
+    left: 5vh;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(27, 27, 27);
+    padding: .3em;
+}
+
+.kpi-score {
+    color: rgb(39, 39, 39);
+    z-index: 2;
+    background-color: rgb(136, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    border-bottom-left-radius: .6vh;
+    border-top-right-radius: 0.6vh;
+    padding-bottom: .7vh;
+    float: right;
+    padding-left: .7vh;
+    font-size: 1.5em;
+}
+
+#kpiIcon {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(24, 23, 23, 0.877);;
+    font-size: 3.5vh;
+    position: absolute;
+    border-radius: 0.3vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.vs-net {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    bottom: 3%;
+    opacity: .9;
+    right: 0.1em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    background-color: rgb(112, 112, 112);
+    white-space: nowrap;
+}
+
+.kpi-source {
+    background-color: rgba(0, 0, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    bottom: 1%;
+    opacity: .9;
+    left: 0.1em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    white-space: nowrap;
+    margin-bottom: -.15em;
+}
+
+.kpi-date {
+    background-color: rgba(140, 0, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    bottom: 1%;
+    opacity: .9;
+    margin-left: 15em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    white-space: nowrap;
+    margin-bottom: -.15em;
+}
+
+.source-date {
+    position: absolute;
+    bottom: 0.6vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    c-comment {
+        position: fixed;
+        right: .55vw;
+        z-index: 1;
+    }
+    .c-cjs-chart {
+        visibility: hidden;
+        width: 99%;
+        top: 18vh;
+        display: block;
+    }
+
+    .c-kpi-card {
+        width: 99vw;
+        display: block;
+    }
+
+    .kpi-title {
+        font-size: 14px;
+    }
+        
+    .kpi-score {
+        font-size: 14px;
+    }
+  }
+
+@media only screen and (max-height: 600px) {
+    .kpi-title {
+        font-size: 14px;
+    }
+    
+    .kpi-score {
+        font-size: 14px;
+    }
+  }
+  
+@media only screen and (max-width: 900px) {
+    .kpi-title {
+        font-size: 14px;
+    }
+        
+    .kpi-score {
+        font-size: 14px;
+    }
+    .c-kpi-card {
+        width: 100%;                          
+    }
+    
+  }
+
+@media only screen and (max-height: 630px) {
+    .kpi-title {
+        font-size: 14px;
+    }
+    .kpi-score {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .kpi-title {
+        font-size: 14px;
+    }
+    
+    .kpi-score {
+        font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .kpi-title {
+        font-size: 11px;
+    }
+    
+    .kpi-score {
+        font-size: 11px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .kpi-title {
+        font-size: 7px;
+    }
+    
+    .kpi-score {
+        font-size: 7px;
+    }
+  }
+
+  @media only screen and (max-width: 200px) {
+    .kpi-title {
+        font-size: 6px;
+    }
+    
+    .kpi-score {
+        font-size: 6px;
+    }
+  }
+
+  @media only screen and (max-width: 100px) {
+    .kpi-title {
+        font-size: 2px;
+    }
+    
+    .kpi-score {
+        font-size: 2px;
+    }
+  }
+
+  @media only screen and (max-width: 50px) {
+    .kpi-title {
+        font-size: 0.5px;
+    }
+    
+    .kpi-score {
+        font-size: 0.5px;
+    }
+  }
+
+  @media only screen and (max-width: 25px) {
+    .kpi-title {
+        font-size: 0.1px;
+    }
+    
+    .kpi-score {
+        font-size: 0.1px;
+    }
+  }
+
+  @media print {
+    .c-kpi-card {
+        width: 100vw;
+    }
+}
+
+  

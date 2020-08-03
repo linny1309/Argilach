@@ -1,0 +1,58 @@
+/*
+
+app.use((req, res, next) => {
+     res.header('Access-Control-Allow-Origin', '*');
+     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+     res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, DELETE');
+     if('OPTIONS' == req.method) {
+        res.sendStatus(200);
+     }
+     else {
+        console.log(`${req.ip} ${req.method} ${req.url}`);
+        next();
+     }
+});
+
+app.use(express.json());
+
+app.use('/', routes);
+
+app.get('/', (req, res) => {
+    res.send([{message: 'hello world'}]);
+});
+
+app.listen(4201, '127.0.0.1', function() {
+    console.log('Server now listening on 4201');
+});
+
+*/
+
+/*
+
+function setValue(arr, value) {
+        if(arr == "primary_key") {
+            primary_key.push(value);
+        }
+        else if(arr == "chart_type") {
+            chart_type.push(value);
+        }
+        else if(arr == "date") {
+            date.push(value);
+        }
+        else if(arr == "dimension_1") {
+            dimension_1.push(value);
+        }
+        else if(arr == "dimension_2") {
+            dimension_2.push(value);
+        }
+        else if(arr == "measure_1") {
+            measure_1.push(value);
+        }
+        else if(arr == "measure_2") {
+            measure_2.push(value);
+    }
+    console.log(value);
+}
+
+*/
+
