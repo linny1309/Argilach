@@ -24,7 +24,8 @@ function checkBoxes() {
   var items = document.getElementsByClassName('check-box') as HTMLCollectionOf<HTMLInputElement>;
   for (var i = 0; i < items.length; i++) {
       //items[i] as HTMLInputElement
-      items[i].checked = true;
+      if(items[i].id !="Winter" && items[i].id !="Spring" && items[i].id !="Summer" && items[i].id !="Fall" && items[i].id !="2016" && items[i].id !="2017" && items[i].id !="2018" && items[i].id !="2019" && items[i].id !="2020" )
+        items[i].checked = true;
   }
 }
 
