@@ -36,7 +36,7 @@
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     padding-left: 1vh;
-    color: white;
+    color: rgb(228, 228, 228);;
     background-color: rgb(73, 73, 73);
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -48,6 +48,7 @@
   }
 
   .filter-anchor {
+    margin-top: -0.7vh;
     position: relative;
     display: block;
   }
@@ -58,8 +59,8 @@ body {
 }
 
 .filter-str {
-    position: absolute;
-    margin-top: 2.3vh;
+    padding-top: 0.5vh;
+    margin-top: 2vh;
 }
 
 .filter-item {
@@ -85,15 +86,17 @@ body {
 }
 
 .filter-title {
-    padding-top: 0.5vh;
-    padding-bottom: 0.4vh;
-    margin-top: 3vh;
-    background-color: white;
+  display: block;
+  width: 100%;
+  margin-top: 4vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.4vh;
+  background-color: rgb(228, 228, 228);;
 }
 
 #filterTitleIcon {
-    padding-left: 1vh;
-    color: black;
+  padding-left: 1vh;
+  color: black;
 }
 
 .filter-title-item {
@@ -101,7 +104,7 @@ body {
     position: relative;
     font-weight: bold;;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: rgb(228, 228, 228);;
     color: black;
     padding-left: 1vh;
 }
@@ -128,7 +131,7 @@ body {
     padding-right: 1vh;
     padding-bottom: 1vh;
     display: inline-flex;
-    color: white
+    color: rgb(228, 228, 228);
 }
 
 .filter-div { 
@@ -139,7 +142,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     padding-left: 1vh;
-    color: white;
+    color: rgb(228, 228, 228);;
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -157,7 +160,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     padding-left: 1vh;
-    color: white;
+    color: rgb(228, 228, 228);;
     visibility: hidden;
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -169,13 +172,15 @@ body {
 }
 
 .filter-tit { 
+    padding-top: 1vh;
     position: relative;
     padding-bottom: 1vh;
     font-weight: bold;;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     padding-left: 1vh;
-    color: white;
+    color: rgb(228, 228, 228);;
+    text-align: center;
     background-color: rgb(73, 73, 73);
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -188,7 +193,7 @@ body {
 
 .material-icons {
     position: relative;
-    color: white;
+    color: rgb(228, 228, 228);;
     margin-top: 2vh;
     font-size: 1.3em;
 }
@@ -196,7 +201,7 @@ body {
 .filter-div { 
     cursor: pointer;
     padding-left: 1vh;
-    color: white;
+    color: rgb(228, 228, 228);;
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
