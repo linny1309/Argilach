@@ -242,7 +242,7 @@ export class CCjsGranChartComponent implements OnInit {
     if(quarters.length < 13) {
         for(n = 0; n < qCount; n++) {
           quarters.push(tempData[n].qtr);
-          chart.data.labels.push(n);
+          chart.data.labels.push(n+1);
         }
       }
       else {
