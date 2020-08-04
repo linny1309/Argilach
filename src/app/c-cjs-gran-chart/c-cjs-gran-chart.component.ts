@@ -227,10 +227,30 @@ export class CCjsGranChartComponent implements OnInit {
 
 
   getQuarter() {
+    var quarters = [];
+    var n;
+    var qCount = tempData[tempData.length - 1].qtr;
     for(let n in tempData) {
-      if (tempData[n].qtr > qCount)
-        qCount = tempData[n].qtr;
+      if (tempData[n].qtr < qCount+1) {
+        qCount--;
+        quarters.push(tempData[n].qtr);
+      }
     }
+    qCount = tempData[tempData.length - 1].qtr;
+    alert(quarters.length)
+    n = 0;
+    if(quarters.length < 13) {
+        for(n = 0; n < qCount; n++) {
+          quarters.push(tempData[n].qtr);
+          chart.data.labels.push(n);
+        }
+      }
+      else {
+        quarters.slice(quarters.length - 13 ,quarters.length);
+        for(n = quarters.length - 13; n < quarters.length; n++) {
+          chart.data.labels.push(quarters[n]);
+        }
+      }
   }
 
   removeField(td,str,x) {
@@ -271,7 +291,7 @@ export class CCjsGranChartComponent implements OnInit {
       plugins: [ChartDataLabels],
       // The data for our dataset
       data: {
-          labels: [1,2,3,4,5,6],
+          labels: [],
           datasets: [{
               label: "Quantity Ordered",
               backgroundColor: "rgba(0, 51, 25, 0.5)",
@@ -330,6 +350,8 @@ export class CCjsGranChartComponent implements OnInit {
     }
   });
 
+
+  this.getQuarter();
   this.getMeasure(tempData,'');
 
 }
