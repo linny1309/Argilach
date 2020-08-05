@@ -79,6 +79,10 @@ c-top-bar {
     padding-top: 10vh;
 }
 
+c-search {
+    z-index: 10;
+}
+
 .chart-frame {
     top: 18vh;
     position: absolute;

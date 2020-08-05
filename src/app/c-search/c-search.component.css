@@ -1,10 +1,10 @@
 .c-search {
     position: fixed;
-    top: 5vh;
+    top: 4.5vh;
     left: 0;
     width: 15em;
-    height: 2.5em;
-    z-index: 30;
+    height: 2.8em;
+    z-index: 1;
     background-color: gray;
     display: flex;
     border-bottom-right-radius: 0.3em;
@@ -14,15 +14,17 @@
 }
 
 #searchInput {
-    margin-top: .7em;
-    height: 1em;
+    border: none;
+    border-radius: 0.3vh;
+    margin-top: 1em;
+    height: 1.5em;
     width: 13em;
     margin-left: 0.05em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #searchIcon {
-    margin-top: .25em;
+    margin-top: .42em;
     font-size: 1.7em;
     margin-left: .1em;
     cursor: default;
@@ -35,7 +37,7 @@
 }
 
 #xButton {
-    margin-top: .22em;
+    margin-top: .44em;
     font-size: 1.5em;
     margin-left: 0.2em;
     font-family: Arial, Helvetica, sans-serif;

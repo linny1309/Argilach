@@ -19,6 +19,10 @@ let titles = ["Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Sc
 let kpiSource = ["IPSOS","NeoGenomics","Adobe Analytics","Google Analytics","Vantage","SP","IPSOS","SP"];
 let kpiDate = ["6/7/20","May-20","5/31/20","6/1/20","6/1/20","1/1/20","Q4","Q6"]; 
 var time = 0;
+var categoryCadance = [2,4,7,8]; //Cadence for category changes
+var categoryCount = [2,2,3,1]; //Count for categories
+var categoryID = ["topCat","cat1","cat2","cat3"];
+var category = ["Digital KPIs","Brand Performance","Customer Dynamics","Brand Transaction"];
 
 var n = 0;
 var kt = document.getElementsByClassName("kpi-title");
@@ -27,6 +31,47 @@ var vp = document.getElementsByClassName("vs-net");
 var ki = document.querySelectorAll("#kpiIcon");
 var kso = document.querySelectorAll("#kpiSource");
 var kd = document.querySelectorAll("#kpiDate");
+
+function filterCategories(kpiState,input) {
+  console.log(kpiState);
+  var n = 0;
+  var total = 0;
+  for(var x = 0; x <= kpiState.length; x++) {
+      if(x == categoryCadance[n]) {
+        if(total == 0) {
+          document.getElementById(categoryID[n]).style.display = "none";
+        }
+        else{
+          document.getElementById(categoryID[n]).style.display = "";
+        }
+        n++;
+        total = kpiState[x];
+      }
+      else {
+        total+=kpiState[x];
+      }
+  }
+  filterByCategory(input);
+}
+
+function filterByCategory(input) {
+  var n = 0;
+  var x = 0;
+  var count = 0;
+  for(n = 0; n < categoryCount.length; n++) {
+    if(category[n].toUpperCase().indexOf(input) > -1) {
+        document.getElementById(categoryID[n]).style.display = "";
+        while(x < categoryCadance[n]) {
+          document.getElementById("kpiDiv"+x).style.display = "";
+          x++;
+        }
+      }
+      else 
+        while(x < categoryCadance[n]) {
+          x++;
+        }
+    }
+}
 
 function animateValue(entry,start, end, type) {
   var range = end - start;
@@ -139,6 +184,7 @@ export class CSearchComponent implements OnInit {
   constructor() { }
 
   search() {
+    var kpiState = [1,1,1,1,1,1,1,1];
     this.setLandingPageTS();
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("searchInput");
@@ -149,9 +195,10 @@ export class CSearchComponent implements OnInit {
             document.getElementById("kpiDiv"+i).style.display = "";
         } else {
             document.getElementById("kpiDiv"+i).style.display = "none";
+            kpiState[i]--;
         }
     }
-    
+    filterCategories(kpiState,filter);
   }
 
   mediaCheck(m) {
@@ -189,11 +236,9 @@ export class CSearchComponent implements OnInit {
 
     setKPICardJS(0);
 
-    for(x = 0; x < 8; x++)
-    {
+    for(x = 0; x < 8; x++) {
         document.getElementById("chart"+x).style.visibility = "hidden";
     }
-
     if(mc == 0)
     {
       document.getElementById("arrowIcon").style.visibility = "visible";
@@ -201,14 +246,12 @@ export class CSearchComponent implements OnInit {
     else {
       document.getElementById("arrowIcon").style.visibility = "hidden";
     }
-
     setTimeout(setLandingColor, 300);
-
   }
 
   closeSearchMenu() {
     document.getElementById("cSearch").style.opacity = "0";
-    document.getElementById("cSearch").style.zIndex = "0";
+    document.getElementById("cSearch").style.display = "none";
   }
 
   ngOnInit(): void {

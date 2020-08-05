@@ -180,6 +180,12 @@ function setPageColor() {
     }
 }
 
+function resetKpis() {
+  for(var x = 0; x < 8; x++) {
+    document.getElementById("kpiDiv"+x).style.display = "";
+  }
+}
+
 @Component({
   selector: 'p-dashboard',
   templateUrl: './p-dashboard.component.html',
@@ -200,7 +206,7 @@ export class PDashboardComponent implements OnInit {
   setPageTS(entry) {
     var search = document.getElementById("searchInput") as HTMLInputElement;
     search.value = "";
-    document.getElementById("kpiDiv0").style.display = "";
+    resetKpis();
     checkBoxes();
     topFunction();
     filterFunction(entry);

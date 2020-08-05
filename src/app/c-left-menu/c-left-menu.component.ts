@@ -202,6 +202,12 @@ function setPageColor() {
     }
 }
 
+function resetKpis() {
+  for(var x = 0; x < 8; x++) {
+    document.getElementById("kpiDiv"+x).style.display = "";
+  }
+}
+
 @Component({
   selector: 'c-left-menu',
   templateUrl: './c-left-menu.component.html',
@@ -226,13 +232,13 @@ export class CLeftMenuComponent implements OnInit {
     document.getElementById("cSearch").style.visibility = "visible";
     document.getElementById("cSearch").style.opacity = "1";
     document.getElementById("cSearch").style.display = "flex";
-    document.getElementById("cSearch").style.zIndex = "30";
+    document.getElementById("cSearch").style.zIndex = "10";
   }
 
   setPageTS(entry) {
     var search = document.getElementById("searchInput") as HTMLInputElement;
     search.value = "";
-    document.getElementById("kpiDiv0").style.display = "";
+    resetKpis();
     checkBoxes();
     topFunction();
     filterFunction(entry);
