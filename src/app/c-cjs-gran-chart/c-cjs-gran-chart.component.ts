@@ -141,7 +141,7 @@ export class CCjsGranChartComponent implements OnInit {
       }
     }
 
-    if(event.target == "[object HTMLInputElement]" || event.target.id == "leftSpan8" || event.target.id == "kpiDiv7") {
+    if((event.target == "[object HTMLInputElement]" || event.target.id == "leftSpan8" || event.target.id == "kpiDiv7") && event.target.id != "searchInput") {
       if(event.target.id == "kpiDiv7" || event.target.id == "leftSpan8"){
         initValues();
         this.getMeasure(JSONData,event);
@@ -237,7 +237,6 @@ export class CCjsGranChartComponent implements OnInit {
       }
     }
     qCount = tempData[tempData.length - 1].qtr;
-    alert(quarters.length)
     n = 0;
     if(quarters.length < 13) {
         for(n = 0; n < qCount; n++) {

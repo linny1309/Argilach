@@ -57,6 +57,14 @@ body {
   color: black;
 }
 
+#searchIcon {
+  margin-top: .5vh;
+  padding-top: .5vh;
+  margin-top: 0.3vh;
+  color: black;
+  float: right;
+}
+
 .nav-title-item {
   top: -0.25em;
   position: relative;

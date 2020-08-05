@@ -198,6 +198,9 @@ export class PDashboardComponent implements OnInit {
   }
 
   setPageTS(entry) {
+    var search = document.getElementById("searchInput") as HTMLInputElement;
+    search.value = "";
+    document.getElementById("kpiDiv0").style.display = "";
     checkBoxes();
     topFunction();
     filterFunction(entry);

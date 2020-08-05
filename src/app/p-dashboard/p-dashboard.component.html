@@ -3,6 +3,7 @@
 <c-right-menu></c-right-menu>
 <c-filter-menu></c-filter-menu>
 <c-calendar id="cCalendar"></c-calendar>
+<c-search></c-search>
 
 <div class="gen-table-container" id="genTableContainer">
     <c-gen-table id="genTable"></c-gen-table>
@@ -36,18 +37,18 @@
         <div class="kpi-body" id="kpiBody">
             <div class="kpi-group" id="kpiGroup">
                 <div class="category" id="topCat"><span>Digital KPIs</span></div>
-                <c-kpi-card id="topKpi" (click)="setPageTS(0)"></c-kpi-card>
+                <div class="kpi-div" id="kpiDiv0"><c-kpi-card class="subKpi" id="topKpi" (click)="setPageTS(0)"></c-kpi-card></div>
                 <div id="subKpi">
-                    <c-kpi-card id="kpiCard1" class="sub-kpi" (click)="setPageTS(1)"></c-kpi-card>
+                    <div class="kpi-div" id="kpiDiv1"><c-kpi-card id="kpiCard1" class="sub-kpi" (click)="setPageTS(1)"></c-kpi-card></div>
                     <div class="category"><span>Brand Performance</span></div>
-                    <c-kpi-card id="kpiCard2" class="sub-kpi" (click)="setPageTS(2)"></c-kpi-card>
-                    <c-kpi-card id="kpiCard3" class="sub-kpi" (click)="setPageTS(3)"></c-kpi-card>
+                    <div class="kpi-div" id="kpiDiv2"><c-kpi-card id="kpiCard2" class="sub-kpi" (click)="setPageTS(2)"></c-kpi-card></div>
+                    <div class="kpi-div" id="kpiDiv3"><c-kpi-card id="kpiCard3" class="sub-kpi" (click)="setPageTS(3)"></c-kpi-card></div>
                     <div class="category"><span>Customer Dynamics</span></div>
-                    <c-kpi-card id="kpiCard4" class="sub-kpi" (click)="setPageTS(4)"></c-kpi-card>
-                    <c-kpi-card id="kpiCard5" class="sub-kpi" (click)="setPageTS(5)"></c-kpi-card>
-                    <c-kpi-card id="kpiCard6" class="sub-kpi" (click)="setPageTS(6)"></c-kpi-card>
+                    <div class="kpi-div" id="kpiDiv4"><c-kpi-card id="kpiCard4" class="sub-kpi" (click)="setPageTS(4)"></c-kpi-card></div>
+                    <div class="kpi-div" id="kpiDiv5"><c-kpi-card id="kpiCard5" class="sub-kpi" (click)="setPageTS(5)"></c-kpi-card></div>
+                    <div class="kpi-div" id="kpiDiv6"><c-kpi-card id="kpiCard6" class="sub-kpi" (click)="setPageTS(6)"></c-kpi-card></div>
                     <div class="category"><span>Granular Data</span></div>
-                    <c-kpi-card id="kpiCard7" class="sub-kpi" (click)="setPageTS(7)"></c-kpi-card>
+                    <div class="kpi-div" id="kpiDiv7"><c-kpi-card id="kpiCard7" class="sub-kpi" (click)="setPageTS(7)"></c-kpi-card></div>
                     <br>
                     <br>
                 </div>

@@ -25,6 +25,7 @@ import { CCalculatorComponent } from './c-calculator/c-calculator.component';
 import { CGenTableComponent } from './c-gen-table/c-gen-table.component';
 import { FormsModule } from '@angular/forms';
 import { CCjsGranChartComponent } from './c-cjs-gran-chart/c-cjs-gran-chart.component';
+import { CSearchComponent } from './c-search/c-search.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { CCjsGranChartComponent } from './c-cjs-gran-chart/c-cjs-gran-chart.comp
     CCalculatorComponent,
     CGenTableComponent,
     CCjsGranChartComponent,
+    CSearchComponent,
   ],
   imports: [
     FormsModule,

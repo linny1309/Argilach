@@ -220,7 +220,19 @@ export class CLeftMenuComponent implements OnInit {
     }
   }
 
+  openSearchMenu() {
+    document.getElementById("cLeftMenu").style.opacity = "0";
+    document.getElementById("cLeftMenu").style.visibility = "hidden";
+    document.getElementById("cSearch").style.visibility = "visible";
+    document.getElementById("cSearch").style.opacity = "1";
+    document.getElementById("cSearch").style.display = "flex";
+    document.getElementById("cSearch").style.zIndex = "30";
+  }
+
   setPageTS(entry) {
+    var search = document.getElementById("searchInput") as HTMLInputElement;
+    search.value = "";
+    document.getElementById("kpiDiv0").style.display = "";
     checkBoxes();
     topFunction();
     filterFunction(entry);
