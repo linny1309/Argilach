@@ -6,32 +6,20 @@ var visual = "chart0";
 var m;
 var mc;
 
-let icons = [ 
-              "score",
-              "insert_chart",
-              "show_chart",
-              "pie_chart",
-              "bubble_chart",
-              "scatter_plot",
-              "score",
-              "leak_add",
-              "multiline_chart"
-            ];
+let icons = ["score","insert_chart","show_chart","pie_chart","bubble_chart","scatter_plot","score","leak_add","multiline_chart"];
+let titles =  ["Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","KPI Scores","Radar Chart","Multi Chart"];
+let rightMenus = ["cRightMenu","cFilterMenu","cCalendar"];
+let leftMenus = ["cSearch","cLeftMenu"];
 
-let titles =  [ 
-                "Key KPIs",
-                "Bar Chart",
-                "Line Chart",
-                "Pie Chart",
-                "Bubble Chart",
-                "Scatter Plot",
-                "KPI Scores",
-                "Radar Chart",
-                "Multi Chart",
-            ];
+function closeMenus(menus,except) {
+  for(var n = 0; n < menus.length; n++) {
+    if(menus[n] !== except) {
+      document.getElementById(menus[n]).style.opacity = "0";
+      document.getElementById(menus[n]).style.visibility = "hidden";
+    }
+  }
+}
 
-/* When the openFullscreen() function is executed, open the video in fullscreen.
-Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
 function toggleFullscreenJS() {
   if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
@@ -42,44 +30,14 @@ function toggleFullscreenJS() {
   }
 }
 
-function changeNavJS() {
-  if(document.getElementById("cLeftMenu").style.visibility == "visible") {
-    document.getElementById("cLeftMenu").style.opacity = "0";
-    document.getElementById("cLeftMenu").style.visibility = "hidden";
+function toggleMenusJS(id) {
+  if(document.getElementById(id).style.visibility == "visible") {
+    document.getElementById(id).style.opacity = "0";
+    document.getElementById(id).style.visibility = "hidden";
   }
   else {
-    document.getElementById("cLeftMenu").style.opacity = "1";
-    document.getElementById("cLeftMenu").style.visibility = "visible";
-  }
-}
-
-function toggleRightMenuJS() {
-  if(document.getElementById("cRightMenu").style.visibility == "visible") {
-    document.getElementById("cRightMenu").style.opacity = "0";
-    document.getElementById("cRightMenu").style.visibility = "hidden";
-  }
-  else {
-    document.getElementById("cRightMenu").style.opacity = "1";
-    document.getElementById("cRightMenu").style.visibility = "visible";
-  }
-}
-
-function toggleFilterMenuJS() {
-  if(document.getElementById("cFilterMenu").style.visibility == "visible") {
-    document.getElementById("cFilterMenu").style.opacity = "0";
-    document.getElementById("cFilterMenu").style.visibility = "hidden";
-  }
-  else {
-    document.getElementById("cFilterMenu").style.opacity = "1";
-    document.getElementById("cFilterMenu").style.visibility = "visible";
-  }
-}
-
-function mediaCheck(m) {
-  if (m.matches) { // If media query matches
-    mc = 0;
-  } else {
-    mc = 1
+    document.getElementById(id).style.opacity = "1";
+    document.getElementById(id).style.visibility = "visible";
   }
 }
 
@@ -93,8 +51,9 @@ export class CTopBarComponent implements OnInit {
 
   constructor() { }
 
-  changeNavTS() {
-    changeNavJS();
+  toggleLeftMenuTS() {
+    closeMenus(leftMenus,'cLeftMenu');
+    toggleMenusJS("cLeftMenu");
   }
 
   ngOnInit(): void {
@@ -108,19 +67,15 @@ export class CTopBarComponent implements OnInit {
   }
   
   toggleRightMenuTS() {
-    if(document.getElementById("cFilterMenu").style.visibility == "visible") {
-      toggleFilterMenuJS();
-    }
+    closeMenus(rightMenus,"cRightMenu");
     document.getElementById("mobileI").innerHTML = "settings";
-    toggleRightMenuJS();
+    toggleMenusJS("cRightMenu");
   }
 
   toggleFilterMenuTS() {
-    if(document.getElementById("cRightMenu").style.visibility == "visible") {
-      toggleRightMenuJS();
-    }
+    closeMenus(rightMenus,"cFilterMenu");
     document.getElementById("mobileI").innerHTML = "reply";
-    toggleFilterMenuJS();
+    toggleMenusJS("cFilterMenu");
   }
 
 }

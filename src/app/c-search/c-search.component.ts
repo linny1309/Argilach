@@ -21,7 +21,7 @@ let kpiDate = ["6/7/20","May-20","5/31/20","6/1/20","6/1/20","1/1/20","Q4","Q6"]
 var time = 0;
 var categoryCadance = [2,4,7,8]; //Cadence for category changes
 var categoryCount = [2,2,3,1]; //Count for categories
-var categoryID = ["topCat","cat1","cat2","cat3"];
+var categoryID = ["cat0","cat1","cat2","cat3"];
 var category = ["Digital KPIs","Brand Performance","Customer Dynamics","Brand Transaction"];
 
 var n = 0;
@@ -218,7 +218,7 @@ export class CSearchComponent implements OnInit {
     document.getElementById("chartContainer").style.visibility = "hidden";
     document.getElementById("topKpi").style.width = "100%";
     document.getElementById("topKpi").style.pointerEvents = 'auto';
-    document.getElementById("topCat").style.display = "block";
+    document.getElementById("cat0").style.display = "block";
     document.getElementById("topKpi").style.position = "relative";
     document.getElementById("pixelAlert").style.display = "none";
 
@@ -251,7 +251,7 @@ export class CSearchComponent implements OnInit {
 
   closeSearchMenu() {
     document.getElementById("cSearch").style.opacity = "0";
-    document.getElementById("cSearch").style.display = "none";
+    document.getElementById("cSearch").style.visibility = "hidden";
   }
 
   ngOnInit(): void {

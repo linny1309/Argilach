@@ -102,11 +102,12 @@ c-right-menu {
 
 .chart-container {
     overflow: hidden;
-    top: 18vh;
+    border:0.2em solid rgb(139, 139, 139);
+    top: 19vh;
     background-color: rgba(163, 163, 163, 0.6);
     color: rgba(163, 163, 163, 0);
     position: fixed;
-    width: 74.5vw;
+    width: 74.4vw;
     height: 35vw;
     left: 0.5vw;
     opacity: 0.99;
@@ -122,10 +123,10 @@ c-kpi-card {
     display: block;
     cursor: pointer;
     z-index: 2;
-    margin-bottom: -0.5vh;
 }
 
 .category {
+    border:0.09em solid rgb(90, 90, 90);
     line-height: 11vh;
     position: relative;
     border-radius: 0.6vh;
@@ -173,10 +174,8 @@ c-comment {
     right: 0vw;
     top: 5vh;
     position: fixed;
-    width: 20%;
     padding-top: 1vh;
     z-index: 10;
-    width: 24%;
 }
 
 c-top-bar {
@@ -229,7 +228,7 @@ c-top-bar {
     }
     .c-cjs-chart {
         visibility: hidden;
-        width: 99%;
+        width: 99.9%;
         top: 20vh;
         display: block;
     }
@@ -245,7 +244,7 @@ c-top-bar {
     }
 
     .chart-container {
-        width: 99%;
+        width: 98.4%;
         position: fixed;
         display: block;
         left: 0.5vw;
@@ -386,7 +385,7 @@ c-top-bar {
     }
 
     .category {
-        width: 99vw;                          
+        width: 98.59vw;                          
     }
 
     .kpi-title {
@@ -436,7 +435,7 @@ c-top-bar {
         display: block;
     }
     .category {
-        width: 100vw;   
+        width: 99vw;   
         font-size: 15px;                     
     }
     .kpi-body {

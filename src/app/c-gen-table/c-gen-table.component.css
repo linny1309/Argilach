@@ -53,6 +53,7 @@ td {
 }
 
 .table-title {
+    border:0.2em solid rgb(78, 78, 78);
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;

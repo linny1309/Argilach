@@ -206,6 +206,9 @@ function resetKpis() {
   for(var x = 0; x < 8; x++) {
     document.getElementById("kpiDiv"+x).style.display = "";
   }
+  for(x = 0; x < 4; x++) {
+    document.getElementById("cat"+x).style.display = "";
+  }
 }
 
 @Component({
@@ -246,7 +249,7 @@ export class CLeftMenuComponent implements OnInit {
     document.getElementById("content").style.overflow = "none";
     document.getElementById("chartContainer").style.visibility = "visible";
     document.getElementById("topKpi").style.pointerEvents = 'none';
-    document.getElementById("topCat").style.display = "none";
+    document.getElementById("cat0").style.display = "none";
     document.getElementById("topKpi").style.position = "fixed";
     document.getElementById("topKpi").style.width = "99%";
     //scrollTo("descContainer" ,0, 0);
@@ -286,7 +289,7 @@ export class CLeftMenuComponent implements OnInit {
     document.getElementById("chartContainer").style.visibility = "hidden";
     document.getElementById("topKpi").style.width = "100%";
     document.getElementById("topKpi").style.pointerEvents = 'auto';
-    document.getElementById("topCat").style.display = "block";
+    document.getElementById("cat0").style.display = "block";
     document.getElementById("topKpi").style.position = "relative";
     document.getElementById("pixelAlert").style.display = "none";
 

@@ -5,6 +5,8 @@
     position: relative;
     border-radius: 0.6vh;
     opacity: 0.99;
+    border:0.2em solid rgb(53, 53, 53);
+    margin-top: 0.1em;
 }
 
 .kpi-title {
@@ -23,6 +25,7 @@
 }
 
 .kpi-score {
+    margin-top: -0.1vh;
     color: rgb(39, 39, 39);
     z-index: 2;
     background-color: rgb(136, 136, 136);
@@ -30,7 +33,7 @@
     display: flex;
     position: relative;
     border-bottom-left-radius: .6vh;
-    border-top-right-radius: 0.6vh;
+    border-top-right-radius: .6vh;
     padding-bottom: .7vh;
     float: right;
     padding-left: .7vh;
@@ -61,13 +64,15 @@
     color: white;
     font-size: 1.5vh;
     position: absolute;
-    bottom: 3%;
     opacity: .9;
-    right: 0.1em;
+    right: 0.03em;
     border-radius: 0.3vh;
     padding: 0.2vh;
+    border-radius: 0.3em 0 0.2em 0;
     background-color: rgb(112, 112, 112);
     white-space: nowrap;
+    bottom: 0vh;
+    margin-bottom: -0.01em;
 }
 
 .kpi-source {
@@ -106,7 +111,7 @@
 
 .source-date {
     position: absolute;
-    bottom: 0.6vh;
+    bottom: 0.23vh;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -123,7 +128,7 @@
     }
 
     .c-kpi-card {
-        width: 99vw;
+        width: 98.45vw;
         display: block;
     }
 
@@ -155,7 +160,7 @@
         font-size: 14px;
     }
     .c-kpi-card {
-        width: 100%;                          
+        width: 99%;                          
     }
     
   }

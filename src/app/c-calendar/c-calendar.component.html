@@ -1,16 +1,13 @@
 <div class="c-calendar">
-    <div class="q-button" id="qButton">?</div>
     <div (click)="toggleCalendar()" class="x-button" id="xButton">X</div>
     <div class="calendar-body">
         <div class="calendar-top">
             <section class="window">
-                <i class="material-icons" id="xButton" title="Exit">cancel_presentation</i>
-                <i class="material-icons" id="drag" title="Exit">pan_tool</i>
-                <div class="calendar-container"><span>Calendar</span> 
+                <div class="calendar-container">
                 </div>
             </section>
-        <div class="c-calendar">
-                <ejs-calendar style="background-color: gray; border:none; "[values]='dateValues' [isMultiSelection]='multiSelect'></ejs-calendar>
+        <div class="calendar">
+            <ejs-calendar style="background-color: gray; border:none; "[values]='dateValues' [isMultiSelection]='multiSelect'></ejs-calendar>
         </div>
     </div>
 </div>

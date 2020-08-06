@@ -12,6 +12,7 @@ body {
 }
 
 .c-comment {
+    border:0.2em solid rgb(48, 48, 48);
     border-radius: 0.6vh;
     position: fixed;
     padding-top: 1vw;
@@ -21,7 +22,7 @@ body {
     visibility: visible;
     transition: 0.1s;
     opacity: 1;
-    width: 100%;
+    width: 94%;
     margin-bottom: -48.8vh;
 }
 
@@ -57,6 +58,7 @@ body {
 }
 
 .desc-title-date {
+    border:0.2em solid rgb(48, 48, 48);
     text-align: center;
     border-radius: 0.3vh;
     background-color: rgb(27, 27, 27);
@@ -71,14 +73,15 @@ body {
 }
 
 .desc-container {
+    border:0.2em solid rgb(71, 71, 71);
     border-radius: .6vh;;
-    margin-left: 2.5%;
-    width: 95%;
+    margin-left: .5%;
+    width: 98%;
     background-color: rgb(124, 124, 124);
     overflow-y: scroll;
-    margin-top: 3vh;
+    margin-top: 2.3vh;
     overflow-x: hidden;
-    height: 45vh;
+    height: 49vh;
 }
 
 .sub-container {
@@ -140,14 +143,14 @@ p {
     }
 
     .c-comment {
-        width: 100%;
+        width: 98%;
         bottom: 0;
         z-index: 2;
         width: 99.3vw;
         display: relative;
         height: 51vh;
         margin-top: 92vh;
-        right: 0.3vh;
+        left: 0vh;
     }
 
     #arrowIcon {
@@ -174,7 +177,7 @@ p {
 
   @media only screen and (min-width: 1000px) {
     .c-comment {
-        width: 24%;
+        width: 23.6%;
     }
     .desc-container {
         height: 45vh;
@@ -185,11 +188,14 @@ p {
     .desc-container {
         height: 45vh;
     }
+    .c-comment {
+        width: 22.8%;
+    }
   }
 
   @media only screen and (max-width: 1550px) {
     .c-comment {
-        margin-left: 86%;
+
     }
     .desc-container {
         height: 45vh;
@@ -215,6 +221,11 @@ p {
   @media only screen and (max-width: 1000px) {
     .desc {
         bottom: 0; 
+    }
+
+    .c-comment {
+        margin-left: 0%;
+        width: 99%;
     }
 
     .desc-container {

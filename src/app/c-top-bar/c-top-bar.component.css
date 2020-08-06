@@ -6,9 +6,8 @@
 
 #menuButton {
     position: fixed;
-    top: .2vh;
-    margin-top: .1vh;
-    margin-top: 0.01vh;
+    top: .0001em;
+    margin-top: -.01em;
     margin-left: 1vh;
     z-index: 10;
     font-size: 5vh;
@@ -24,6 +23,10 @@
 }
 
 .c-top-bar {
+    border:0.2em solid rgb(119, 119, 119);
+    border-right: none;
+    border-left: none;
+    border-top: none;
     z-index: 20;
     position: fixed;
     left: 0;
@@ -34,19 +37,20 @@
 }
 
 .page-title {
+    border:0.1em solid rgb(119, 119, 119);
     border-radius: .4vh;
     padding-top: .5vh;
     white-space: nowrap;
     position: absolute;
     width: 10em;
     height: 3vh;
-    font-size: 2.5vh; 
+    font-size: 2.2vh; 
     background-color: rgb(41, 41, 41);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     cursor: pointer;
-    margin-top: 0.7vh;
+    margin-top: 0.25em;
     margin-left: 11vh;
     font-weight: bold;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -59,6 +63,8 @@
 }
 
 #pageIcon {
+    border:0.1em solid rgb(119, 119, 119);
+    top: 0.2em;
     border-radius: 0.6vh;
     text-align: center;
     font-size: 2.5vh;
@@ -70,8 +76,7 @@
     background-color: rgb(41, 41, 41);
     color: white;
     cursor: pointer;
-    margin-top: 0.7vh;
-    margin-left: 6.4vh;
+    margin-left: 5.9vh;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -104,6 +109,7 @@
 /* <body></body> Section */
 
   .right-items {
+    border:0.1em solid rgb(119, 119, 119);
     padding-top: .3vh;
     padding-bottom: .3vh;
     border-radius: .4vh;
@@ -116,7 +122,7 @@
     top: .53vh;
     margin-top: .1vh;
     right: .3em;
-    height: 3.5vh;
+    height: 3vh;
     color: rgb(109, 109, 109);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -130,19 +136,15 @@
     color: #fefefa;
   }
 
-  hr {
-  }
-  
-
   #topBarI {
     float: middle;
     position: sticky;
     cursor: pointer;
-    font-size: 3vh;
-    padding-left: .5vw;
-    padding-right: .5vw;
+    font-size: 2.5vh;
+    padding-left: .3em;
+    padding-right: .3em;
     color: white;
-    margin-top: 0.5vh
+    margin-top: 0.27vh
   }
 
   #xButton {
