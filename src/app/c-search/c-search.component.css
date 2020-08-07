@@ -11,12 +11,16 @@
     visibility: hidden;
     transition: 0.2s;
     opacity: 0;
-    border:0.2em solid rgb(78, 78, 78);
+    border:0.05em solid rgb(158, 158, 158);
     border-top: "none";
     border-left: none;
 }
 
 #searchInput {
+    border:0.2em solid rgb(19, 19, 19);
+    background-color: rgb(182, 182, 182);
+    color: rgb(29, 29, 29);
+    font-weight: bold;
     border: none;
     border-radius: 0.3vh;
     margin-top: 1.2em;
@@ -32,6 +36,7 @@
     font-size: 1.7em;
     margin-left: .1em;
     cursor: default;
+    color:rgb(54, 54, 54);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -40,13 +45,13 @@
             user-select: none; 
 }
 
-#xButton {
-    margin-top: .55em;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-left: 0.2em;
-    font-family: Arial, Helvetica, sans-serif;
+#xIcon {
     cursor: pointer;
+    font-weight: bold;
+    margin-top: .58em;
+    font-size: 1.6em;
+    margin-left: .1em;
+    color:rgb(54, 54, 54);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */

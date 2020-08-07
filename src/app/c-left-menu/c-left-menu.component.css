@@ -34,10 +34,6 @@ body {
   src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
-.nav-options {
-  margin-top: -0.5em;
-}
-
 .text-collection {
   margin-top: 5vh;
 }
@@ -49,7 +45,7 @@ body {
 }
 
 .nav-title {
-  border:0.2em solid rgb(179, 179, 179);
+  border:0.05em solid rgb(179, 179, 179);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -62,16 +58,15 @@ body {
 #navTitleIcon {
   padding-top: .5vh;
   margin-top: 0.7vh;
-  color: black;
+  color:rgb(50, 50, 50);
 }
 
 #searchIcon {
   vertical-align: center;
   padding-top: .5vh;
   margin-top: 0.6vh;
-  color: black;
+  color:rgb(50, 50, 50);
   float: right;
-  font-weight: bold;
 }
 
 .nav-title-item {
@@ -79,15 +74,14 @@ body {
   top: -0.25em;
   position: relative;
   font-size: 1em;
-  font-weight: bold;;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(228, 228, 228);
-  color: black;
+  color:rgb(50, 50, 50);
 }
 
 
 .c-left-menu {
-    border:0.2em solid rgb(179, 179, 179);
+    border:0.05em solid rgb(179, 179, 179);
     border-top: none;
     border-left: none;
     overflow-x: hidden;
@@ -126,7 +120,7 @@ body {
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   padding-right: 10px;
-  color: rgb(27, 27, 27);
+  color:rgb(((50, 50, 50)));
 }
 
 .c-left-icons {
@@ -141,21 +135,21 @@ body {
 }
 
 span {
-  color: rgb(27, 27, 27);
+  color:rgb(50, 50, 50);
 }
 
 #leftMi {
-  color: rgb(27, 27, 27);
+  color:rgb(50, 50, 50);
 }
 
 .left-div { 
-  border:0.2em solid rgb(179, 179, 179);
+  border:0.05em solid rgb(179, 179, 179);
   border-top: none;
   border-right: none;
   border-left: none;
   padding-bottom: 0.5vh;
   padding-top: 0.5vh;
-  color: rgb(27, 27, 27);
+  color:rgb(50, 50, 50);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */

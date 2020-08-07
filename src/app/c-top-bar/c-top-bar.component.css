@@ -23,7 +23,7 @@
 }
 
 .c-top-bar {
-    border:0.2em solid rgb(119, 119, 119);
+    border:0.05em solid rgb(119, 119, 119);
     border-right: none;
     border-left: none;
     border-top: none;
@@ -37,7 +37,7 @@
 }
 
 .page-title {
-    border:0.1em solid rgb(119, 119, 119);
+    border:0.05em solid rgb(119, 119, 119);
     border-radius: .4vh;
     padding-top: .5vh;
     white-space: nowrap;
@@ -52,7 +52,6 @@
     cursor: pointer;
     margin-top: 0.25em;
     margin-left: 11vh;
-    font-weight: bold;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -63,7 +62,7 @@
 }
 
 #pageIcon {
-    border:0.1em solid rgb(119, 119, 119);
+    border:0.05em solid rgb(119, 119, 119);
     top: 0.2em;
     border-radius: 0.6vh;
     text-align: center;
@@ -94,7 +93,6 @@
     z-index: 4;
     height: 1vh;
     font-size: 2.5vh; 
-    font-weight: bold;
     width: 80%;
     text-align: center;
     white-space: nowrap;
@@ -109,7 +107,7 @@
 /* <body></body> Section */
 
   .right-items {
-    border:0.1em solid rgb(119, 119, 119);
+    border:0.05em solid rgb(119, 119, 119);
     padding-top: .3vh;
     padding-bottom: .3vh;
     border-radius: .4vh;

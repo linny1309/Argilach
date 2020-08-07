@@ -361,7 +361,6 @@ export class CLeftMenuComponent implements OnInit {
           cursor: pointer;
           font-size: 15px;
           margin-top: .2em;
-          font-weight: bold;
           -webkit-touch-callout: none; /* iOS Safari */
           -webkit-user-select: none; /* Safari */
            -khtml-user-select: none; /* Konqueror HTML */

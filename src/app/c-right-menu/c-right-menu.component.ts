@@ -100,7 +100,7 @@ export class CRightMenuComponent implements OnInit {
                 "Print to PDF",
                 "Filters",
                 "FS (And, Web)",
-                "Visual to Table"
+                "Metadata"
               ]
 
     for(let entry of titles) {
@@ -124,7 +124,6 @@ export class CRightMenuComponent implements OnInit {
           font-size: 15px;
           margin-left: 1vh;
           margin-top: 1.3vh;
-          font-weight: bold;
           -webkit-touch-callout: none; /* iOS Safari */
           -webkit-user-select: none; /* Safari */
            -khtml-user-select: none; /* Konqueror HTML */

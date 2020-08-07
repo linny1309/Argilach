@@ -5,7 +5,7 @@
     position: relative;
     border-radius: 0.6vh;
     opacity: 0.99;
-    border:0.185em solid rgb(53, 53, 53);
+    border:0.05em solid rgb(53, 53, 53);
     margin-bottom: 0.8vh;
 }
 
@@ -19,12 +19,12 @@
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    font-weight: bold;
     background-color: rgb(27, 27, 27);
     padding: .3em;
 }
 
 .kpi-score {
+    font-weight: bold;
     margin-top: -0.1vh;
     color: rgb(39, 39, 39);
     z-index: 2;
@@ -58,6 +58,7 @@
 }
 
 .vs-net {
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: relative;
@@ -242,6 +243,20 @@
     .c-kpi-card {
         width: 100vw;
     }
+}
+
+@media only screen and (max-width: 900px) and  (min-height: 500px){
+    .c-kpi-card {
+        width: 97.8vw;     
+    }
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+    .c-kpi-card {
+        width: 98.6vw;     
+    }
+
 }
 
   

@@ -7,9 +7,9 @@
     z-index: 30;
     border-bottom-left-radius: 0.3em;
     width: 15em;
-    border:0.2em solid rgb(155, 155, 155);
+    border:0.05em solid rgb(155, 155, 155);
     border-right: none;
-    border-bottom-width: 0.25em;
+    border-bottom-width: 0.025em;
 }
 
 .calendar {
@@ -68,6 +68,7 @@ i {
 }
 
 .x-button {
+    border:0.05em solid rgb(155, 155, 155);
     cursor: pointer;
     position: fixed;
     z-index: 40;
@@ -99,6 +100,7 @@ i {
 }
 
 .e-day {
+    border:0.05em solid rgb(155, 155, 155);
     font-weight: bold;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -113,6 +115,7 @@ i {
 }
 
 .e-content {
+    border:0.05em solid rgb(155, 155, 155);
     padding-top: 0.8em;
     border-radius: 0.15em;
     background-color: rgb(95, 95, 95);
@@ -133,20 +136,20 @@ i {
 }
 
 .e-btn {
+    border:0.05em solid rgb(155, 155, 155);
     margin-top: 0.5em;
     padding: 0.5em;
     background-color: rgb(95, 95, 95);
     font-weight: bold;
     border-radius: 0.15em;
-    border: none;
 }
 
 .e-next {
+    border:0.05em solid rgb(155, 155, 155);
     margin-top: 1em;
     background-color: rgb(95, 95, 95);
     width: 1.5em;
     height: .5em;
-    border: none;
     margin-left: 0.5em;
     border-top-right-radius: 5vh;
     border-bottom-right-radius: 5vh;
@@ -154,11 +157,11 @@ i {
 }
 
 .e-prev {
+    border:0.05em solid rgb(155, 155, 155);
     margin-top: 1em;
     background-color: rgb(95, 95, 95);
     width: 1.5em;
     height: .5em;
-    border: none;
     margin-right: 0.5em;
     border-radius: 0.3vh;
     border-top-left-radius: 5vh;
@@ -167,6 +170,7 @@ i {
 }
 
 .e-title {
+    border:0.05em solid rgb(155, 155, 155);
     margin-top: .5vh;
     margin-left: 5%;
     width: 90%;
