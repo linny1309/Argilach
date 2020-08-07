@@ -42,7 +42,6 @@ window.open(dataURI);
 
 }
 
-
   let titles = [ "Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","Radar Chart","Combo Chart","Gran Chart"];
 
 	// scroll down for ES6 features. 
@@ -186,48 +185,49 @@ export class CGenTableComponent implements OnInit {
   }
 
   onChange(event) {
+    console.log(event.target.id);
     if(event.target == "[object HTMLSpanElement]" || event.target == "[object HTMLDivElement]") {  
-      if(event.target.id == "leftSpan0") {
+      if(event.target.id == "leftSpan0" || event.target.id == "leftDiv0") {
         curData = kpiCards;
         tableFromJson(kpiCards);
         document.getElementById("tableTitle").innerHTML = titles[0];
       }
-      else if(event.target.id == "leftSpan1" || event.target.id == "kpiDiv0") {
+      else if(event.target.id == "leftSpan1" || event.target.id == "kpiDiv0" || event.target.id == "leftDiv1") {
         curData = barChartData;
         tableFromJson(barChartData);
         document.getElementById("tableTitle").innerHTML = titles[1];
       }
-      else if(event.target.id == "leftSpan2" || event.target.id == "kpiDiv1") {
+      else if(event.target.id == "leftSpan2" || event.target.id == "kpiDiv1" || event.target.id == "leftDiv2") {
         curData = lineChartData;
         tableFromJson(lineChartData);
         document.getElementById("tableTitle").innerHTML = titles[2];
       }
-      else if(event.target.id == "leftSpan3" || event.target.id == "kpiDiv2") {
+      else if(event.target.id == "leftSpan3" || event.target.id == "kpiDiv2" || event.target.id == "leftDiv3") {
         curData = pieChartData;
         tableFromJson(pieChartData);
         document.getElementById("tableTitle").innerHTML = titles[3];
       }
-      else if(event.target.id == "leftSpan4" || event.target.id == "kpiDiv3") {
+      else if(event.target.id == "leftSpan4" || event.target.id == "kpiDiv3" || event.target.id == "leftDiv4") {
         curData = bubbleChartData;
         tableFromJson(bubbleChartData);
         document.getElementById("tableTitle").innerHTML = titles[4];
       }
-      else if(event.target.id == "leftSpan5" || event.target.id == "kpiDiv4") {
+      else if(event.target.id == "leftSpan5" || event.target.id == "kpiDiv4" || event.target.id == "leftDiv5") {
         curData = scatterPlotData;
         tableFromJson(scatterPlotData);
         document.getElementById("tableTitle").innerHTML = titles[5];
       }
-      else if(event.target.id == "leftSpan6" || event.target.id == "kpiDiv5") {
+      else if(event.target.id == "leftSpan6" || event.target.id == "kpiDiv5" || event.target.id == "leftDiv6") {
         curData = radarChartData;
         tableFromJson(radarChartData);
         document.getElementById("tableTitle").innerHTML = titles[6];
       }
-      else if(event.target.id == "leftSpan7" || event.target.id == "kpiDiv6") {
+      else if(event.target.id == "leftSpan7" || event.target.id == "kpiDiv6" || event.target.id == "leftDiv7") {
         curData = comboChartData;
         tableFromJson(comboChartData);
         document.getElementById("tableTitle").innerHTML = titles[7];
       }
-      else if(event.target.id == "leftSpan8" || event.target.id == "kpiDiv7") {
+      else if(event.target.id == "leftSpan8" || event.target.id == "kpiDiv7" || event.target.id == "leftDiv8") {
         curData = granChartData;
         tableFromJson(granChartData);
         document.getElementById("tableTitle").innerHTML = titles[8];

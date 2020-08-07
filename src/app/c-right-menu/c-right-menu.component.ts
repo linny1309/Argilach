@@ -149,7 +149,6 @@ export class CRightMenuComponent implements OnInit {
       document.getElementById("kpiBody").style.display = "none";
       document.getElementById("genTable").style.visibility = "visible";
       document.getElementById("pixelAlertContainer").style.display = "none";
-      document.getElementById("cComment").style.display = "none";
     }
     else {
       toggleVisualsJS();
@@ -159,7 +158,6 @@ export class CRightMenuComponent implements OnInit {
       document.getElementById("kpiBody").style.display = "block";
       document.getElementById("genTable").style.visibility = "hidden";
       document.getElementById("pixelAlertContainer").style.display = "block";
-      document.getElementById("cComment").style.display = "block";
     }
     tableVisual = !tableVisual; 
   }

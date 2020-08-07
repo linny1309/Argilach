@@ -5,8 +5,8 @@
     position: relative;
     border-radius: 0.6vh;
     opacity: 0.99;
-    border:0.2em solid rgb(53, 53, 53);
-    margin-top: 0.1em;
+    border:0.185em solid rgb(53, 53, 53);
+    margin-bottom: 0.8vh;
 }
 
 .kpi-title {
@@ -120,15 +120,9 @@
         right: .55vw;
         z-index: 1;
     }
-    .c-cjs-chart {
-        visibility: hidden;
-        width: 99%;
-        top: 18vh;
-        display: block;
-    }
 
     .c-kpi-card {
-        width: 98.45vw;
+        width: 98.5vw;
         display: block;
     }
 
@@ -160,7 +154,7 @@
         font-size: 14px;
     }
     .c-kpi-card {
-        width: 99%;                          
+        width: 97.9vw;      
     }
     
   }
