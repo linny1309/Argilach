@@ -124,7 +124,8 @@ body {
 }
 
 .c-left-icons {
-    left: 0.5vh;
+    margin-left: 0.7vh;
+    left: 0.7vh;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */

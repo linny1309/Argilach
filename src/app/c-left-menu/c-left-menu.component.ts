@@ -13,6 +13,7 @@ let vsNet = [300,-1,3,2,2.2,-5,4,16];
 let vsNetLabel = ["vs PW","vs PM","","vs PY","vs PY","vs PY","vs PQ","vs PQ"];
 let numAbr = ["K","K","%","M","","","",""];
 let icons = ["score","bar_chart","show_chart","pie_chart","bubble_chart","scatter_plot","leak_add","multiline_chart","bar_chart"];
+let catNum = [0,1,1,2,2,3,3,3,4];
 let kpiIcons = ["bar_chart","show_chart","pie_chart","bubble_chart","scatter_plot","leak_add","multiline_chart","bar_chart"];
 let titles = ["Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","Radar Chart","Combo Chart","Gran Chart"];
 let kpiSource = ["IPSOS","NeoGenomics","Adobe Analytics","Google Analytics","Vantage","SP","IPSOS","SP"];
@@ -329,17 +330,7 @@ export class CLeftMenuComponent implements OnInit {
 
     filterFunction(null);
 
-    let titles = [ 
-                "Key KPIs",
-                "Bar Chart",
-                "Line Chart",
-                "Pie Chart",
-                "Bubble Chart",
-                "Scatter Plot",
-                "Radar Chart",
-                "Combo Chart",
-                "Gran Chart"
-              ]
+    let titles = [ "Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","Radar Chart","Combo Chart","Gran Chart"]
 
     for(let entry of titles) {
 

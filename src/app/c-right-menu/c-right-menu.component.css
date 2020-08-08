@@ -63,7 +63,7 @@
 }
 
 #optionsTitleIcon {
-  padding-left: 1vh;
+  padding-left: 0.5vh;
   color: white;
 }
 
@@ -86,7 +86,7 @@
     border-left: none;
     border-top: none;
     cursor: pointer;
-    padding-left: 1vh;
+    padding-left: 0.5vh;
     color: rgb(228, 228, 228);;
       -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */

@@ -89,19 +89,20 @@ export class CRightMenuComponent implements OnInit {
     document.getElementById("rightIcon"+n).innerHTML = icons[n];
   }
 
+  setMetaIcon() {
+    if(document.getElementById("rightIcon8").innerHTML == "table_view") {
+      document.getElementById("rightIcon8").innerHTML = "bar_chart";
+      document.getElementById("rightSpan8").innerHTML = "Visual";
+    }
+    else {
+      document.getElementById("rightIcon8").innerHTML = "table_view";
+      document.getElementById("rightSpan8").innerHTML = "Metadata";
+    }
+  }
+
   ngOnInit(): void {
 
-    let titles = [ 
-                "Overview",
-                "Calculator",
-                "Calendar",
-                "Reload Data",
-                "Download Data",
-                "Print to PDF",
-                "Filters",
-                "FS (And, Web)",
-                "Metadata"
-              ]
+    let titles = [ "Overview","Calculator","Calendar","Reload Data","Download Data","Print to PDF","Filters","FS (And, Web)","Metadata"]
 
     for(let entry of titles) {
 
@@ -139,6 +140,7 @@ export class CRightMenuComponent implements OnInit {
   }
 
   toggleTableVisualTS() {
+    this.setMetaIcon();
     topFunction();
     if(tableVisual == false) {
       toggleVisualsJS();

@@ -171,11 +171,11 @@
 
 @media only screen and (max-height: 500px) {
     .kpi-title {
-        font-size: 14px;
+        font-size: 8px;
     }
     
     .kpi-score {
-        font-size: 14px;
+        font-size: 8px;
     }
   }
 
