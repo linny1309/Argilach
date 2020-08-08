@@ -21,8 +21,8 @@ var queries = [
     'SELECT scatter_plot_entry, no_orders, age FROM scatter_plot',
     'SELECT brand, emotion, customers FROM radar_chart',
     'SELECT qtr, bulk_orders, orders_per_cust FROM combo_chart',
-    'SELECT * FROM gran_data',
-    'SELECT patient_id, qty_ordered FROM gran_data'
+    'SELECT * FROM gran_chart',
+    'SELECT patient_id, qty_ordered FROM gran_chart'
 ];
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             var pass = "nopasswordhere0530"                                                                                                                                                                                                                                                                                                                                                   
 var mysql = require("mysql");

@@ -1,0 +1,18 @@
+<body class="c-welcome" id="cWelcome">
+    <br>
+    <br>
+    <div class="center-align">
+        <div class="title">
+            <span class="welcome">Welcome</span>
+            <br>
+            <span class="enter-pin">Enter Your Pin</span>
+            <br>
+            <input type="password" name="pin" formControlName="PIN" placeholder="PIN" id="pin" #pin>
+            <br>
+            <br>  
+            <br>
+            <button (click)="checkPinTS(pin.value)">Enter</button>
+        </div>
+        <br>
+    </div>
+</body>

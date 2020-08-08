@@ -12,6 +12,8 @@ import { CCjsScatterPlotComponent } from './c-cjs-scatter-plot/c-cjs-scatter-plo
 import { CCjsRadarChartComponent } from './c-cjs-radar-chart/c-cjs-radar-chart.component';
 import { CCjsComboChartComponent } from './c-cjs-combo-chart/c-cjs-combo-chart.component';
 import { CGenTableComponent } from './c-gen-table/c-gen-table.component';
+import { CFbTaskListComponent } from './c-fb-task-list/c-fb-task-list.component';
+import { CFbSignInComponent } from './c-fb-sign-in/c-fb-sign-in.component';
 
 
 const routes: Routes = [
@@ -29,7 +31,10 @@ const routes: Routes = [
   { path: 'c-left-menu', component: CLeftMenuComponent },
   { path: 'c-right-menu', component: CRightMenuComponent },
   { path: 'c-top-bar', component: CTopBarComponent },
-  { path: 'c-kpi-card', component: CKpiCardComponent}
+  { path: 'c-kpi-card', component: CKpiCardComponent},
+
+  { path: 'c-fb-sign-in', component: CFbSignInComponent },
+  { path: '**', redirectTo: 'c-fb-sign-in', pathMatch: 'full' }
 
 ];
 

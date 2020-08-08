@@ -1,0 +1,21 @@
+<div style="width: 100%;display: flex;justify-content: center;">
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgb(180, 180, 180)">Argilach</h1>
+</div>
+<div class="sign-in-page" style="width: 100%;display: flex;justify-content: center;">
+    <div>
+    <br>
+        <form [formGroup]="signInForm" (ngSubmit)="signIn(signInForm)">
+            <input type="email" name="email" formControlName="email" placeholder="Email">
+            <br>
+            <br>
+            <input type="password" name="password" formControlName="password" placeholder="Password">
+            <br>
+            <br>
+            <button>Sign In</button>
+        </form>
+        <br>
+    </div>
+</div>
+<div style="width: 100%;display: flex;justify-content: center;">
+    <h4 *ngIf="signInFailed" style="color: rgb(214, 214, 214); font-family: Arial, Helvetica">Sign in failed. Please try again.</h4>
+</div>

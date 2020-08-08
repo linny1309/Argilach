@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CTopBarComponent } from './c-top-bar/c-top-bar.component';
 import { CRightMenuComponent } from './c-right-menu/c-right-menu.component';
@@ -26,6 +27,23 @@ import { CGenTableComponent } from './c-gen-table/c-gen-table.component';
 import { FormsModule } from '@angular/forms';
 import { CCjsGranChartComponent } from './c-cjs-gran-chart/c-cjs-gran-chart.component';
 import { CSearchComponent } from './c-search/c-search.component';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { CFbTaskListComponent } from './c-fb-task-list/c-fb-task-list.component';
+import { CFbSignInComponent } from './c-fb-sign-in/c-fb-sign-in.component';
+import { CWelcomeComponent } from './c-welcome/c-welcome.component';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBH9hzhFN0cy_w4V9hBuzkgSygut6uOzXQ",
+  authDomain: "argilach-5a35f.firebaseapp.com",
+  databaseURL: "https://argilach-5a35f.firebaseio.com",
+  projectId: "argilach-5a35f",
+  storageBucket: "argilach-5a35f.appspot.com",
+  messagingSenderId: "438578374353",
+  appId: "1:438578374353:web:323c99d3f9a61746a407f0",
+  measurementId: "G-12ZVK4XLNS"
+};
 
 @NgModule({
   declarations: [
@@ -50,13 +68,18 @@ import { CSearchComponent } from './c-search/c-search.component';
     CGenTableComponent,
     CCjsGranChartComponent,
     CSearchComponent,
+    CFbTaskListComponent,
+    CFbSignInComponent,
+    CWelcomeComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     FormsModule,
     CalendarModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

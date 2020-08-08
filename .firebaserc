@@ -2,5 +2,14 @@
   "projects": {
     "default": "inspired-fact-247414",
     "argilach": "argilach-5a35f"
+  },
+  "targets": {
+    "argilach-5a35f": {
+      "hosting": {
+        "Argilach": [
+          "argilach-5a35f"
+        ]
+      }
+    }
   }
 }
