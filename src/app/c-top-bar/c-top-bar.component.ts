@@ -84,4 +84,11 @@ export class CTopBarComponent implements OnInit {
     toggleMenusJS("cProfileMenu");
   }
 
+  toggleMobileMenuTS() {
+    closeMenus(rightMenus,"cRightMenu");
+    toggleMenusJS("cRightMenu");
+    document.getElementById("mobileI").innerHTML = "settings";
+
+  }
+
 }

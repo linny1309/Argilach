@@ -3,7 +3,7 @@ import { Component, OnInit, ɵɵresolveBody } from '@angular/core';
 var n = 0;
 var tableVisual = false;
 
-let icons = ["info","iso","today","refresh","get_app","picture_as_pdf","tune","fullscreen","table_view"];
+let icons = ["info","iso","today","refresh","get_app","picture_as_pdf","tune","fullscreen","table_view","account_box"];
 let titles = [ "Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","Radar Chart","Combo Chart"];
 
 function topFunction() {
@@ -91,7 +91,7 @@ export class CRightMenuComponent implements OnInit {
 
   ngOnInit(): void {
 
-    let titles = [ "Overview","Calculator","Calendar","Reload Data","Download Data","Print to PDF","Filters","FS (And, Web)","Metadata"]
+    let titles = [ "Overview","Calculator","Calendar","Reload Data","Download Data","Print to PDF","Filters","FS (And, Web)","Metadata","Profile"]
 
     for(let entry of titles) {
 
@@ -186,10 +186,10 @@ export class CRightMenuComponent implements OnInit {
   }
 
   toggleProfileMenuTS() {
-    if(document.getElementById("cProfile").style.visibility == "visible") {
-      toggleMenuJS("cProfile");
+    if(document.getElementById("cRightMenu").style.visibility == "visible") {
+      toggleMenuJS("cRightMenu");
     }
     document.getElementById("mobileI").innerHTML = "reply";
-    toggleMenuJS("cFilterMenu");
+    toggleMenuJS("cProfileMenu");
   }
 }
