@@ -1,10 +1,10 @@
 <c-welcome></c-welcome>
 <c-top-bar></c-top-bar>
-<c-left-menu></c-left-menu>
 <c-right-menu></c-right-menu>
 <c-filter-menu></c-filter-menu>
 <c-calendar id="cCalendar"></c-calendar>
 <c-search></c-search>
+<c-left-menu></c-left-menu>
 
 
 <div class="gen-table-container" id="genTableContainer">
@@ -12,10 +12,16 @@
 </div>
 
 <body id="pDashboard">
+        <div class="c-profile-menu" id="cProfileMenu"> 
+                <div class="text-collection">
+                    <div class="profile-anchor"><div class="profile-title"><span class="material-icons" id="profileTitleIcon">account_box</span><span class="profile-title-item">Profile</span></div>
+                        <div (click)="signOut()" class="profile-div" id="profDiv0"><span class="material-icons" id="signOutTitleIcon">exit_to_app</span><span class="sign-out-text">Sign-Out</span></div>
+                </div>
+        </div>
+    </div>
     <div class="content" id="content">
         <div class="chart-container" id="chartContainer">
             <div class="chart-grouping">
-                <br>
                 <c-cjs-bar-chart class="c-cjs-chart" id="chart0"></c-cjs-bar-chart>
                 <br>
                 <c-cjs-line-chart class="c-cjs-chart" id="chart1"></c-cjs-line-chart>

@@ -44,25 +44,14 @@ function toggleVisualsJS() {
 }
 
 
-function toggleRightMenuJS() {
-  if(document.getElementById("cRightMenu").style.visibility == "visible") {
-    document.getElementById("cRightMenu").style.opacity = "0";
-    document.getElementById("cRightMenu").style.visibility = "hidden";
+function toggleMenuJS(id) {
+  if(document.getElementById(id).style.visibility == "visible") {
+    document.getElementById(id).style.opacity = "0";
+    document.getElementById(id).style.visibility = "hidden";
   }
   else {
-    document.getElementById("cRightMenu").style.opacity = "1";
-    document.getElementById("cRightMenu").style.visibility = "visible";
-  }
-}
-
-function toggleFilterMenuJS() {
-  if(document.getElementById("cFilterMenu").style.visibility == "visible") {
-    document.getElementById("cFilterMenu").style.opacity = "0";
-    document.getElementById("cFilterMenu").style.visibility = "hidden";
-  }
-  else {
-    document.getElementById("cFilterMenu").style.opacity = "1";
-    document.getElementById("cFilterMenu").style.visibility = "visible";
+    document.getElementById(id).style.opacity = "1";
+    document.getElementById(id).style.visibility = "visible";
   }
 }
 
@@ -168,20 +157,21 @@ export class CRightMenuComponent implements OnInit {
     toggleFullscreenJS(n);
   }
 
-  toggleRightMenuTS() {
+  toggleMenuTS(id) {
     if(document.getElementById("cFilterMenu").style.visibility == "visible") {
-      toggleFilterMenuJS();
+      toggleMenuJS("cFilterMenu");
     }
+    else if(document.getElementById("cProfileMenu").style.visibility == "visible")
     document.getElementById("mobileI").innerHTML = "settings";
-    toggleRightMenuJS();
+    toggleMenuJS(id);
   }
 
   toggleFilterMenuTS() {
     if(document.getElementById("cRightMenu").style.visibility == "visible") {
-      toggleRightMenuJS();
+      toggleMenuJS("cRightMenu");
     }
     document.getElementById("mobileI").innerHTML = "reply";
-    toggleFilterMenuJS();
+    toggleMenuJS("cFilterMenu");
   }
 
   toggleElement(id) {
@@ -193,5 +183,13 @@ export class CRightMenuComponent implements OnInit {
       document.getElementById(id).style.opacity = "1";
       document.getElementById(id).style.visibility = "visible";
     }
+  }
+
+  toggleProfileMenuTS() {
+    if(document.getElementById("cProfile").style.visibility == "visible") {
+      toggleMenuJS("cProfile");
+    }
+    document.getElementById("mobileI").innerHTML = "reply";
+    toggleMenuJS("cFilterMenu");
   }
 }

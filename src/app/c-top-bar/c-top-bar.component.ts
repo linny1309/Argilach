@@ -8,7 +8,7 @@ var mc;
 
 let icons = ["score","insert_chart","show_chart","pie_chart","bubble_chart","scatter_plot","score","leak_add","multiline_chart"];
 let titles =  ["Key KPIs","Bar Chart","Line Chart","Pie Chart","Bubble Chart","Scatter Plot","KPI Scores","Radar Chart","Multi Chart"];
-let rightMenus = ["cRightMenu","cFilterMenu","cCalendar"];
+let rightMenus = ["cRightMenu","cFilterMenu","cCalendar","cProfileMenu"];
 let leftMenus = ["cSearch","cLeftMenu"];
 
 function closeMenus(menus,except) {
@@ -51,9 +51,9 @@ export class CTopBarComponent implements OnInit {
 
   constructor() { }
 
-  toggleLeftMenuTS() {
-    closeMenus(leftMenus,'cLeftMenu');
-    toggleMenusJS("cLeftMenu");
+  toggleMenuTS(id) {
+    closeMenus(leftMenus,id);
+    toggleMenusJS(id);
   }
 
   ngOnInit(): void {
@@ -76,6 +76,12 @@ export class CTopBarComponent implements OnInit {
     closeMenus(rightMenus,"cFilterMenu");
     document.getElementById("mobileI").innerHTML = "reply";
     toggleMenusJS("cFilterMenu");
+  }
+
+  toggleProfileMenuTS() {
+    closeMenus(rightMenus,"cProfileMenu");
+    document.getElementById("mobileI").innerHTML = "reply";
+    toggleMenusJS("cProfileMenu");
   }
 
 }

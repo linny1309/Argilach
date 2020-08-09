@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CWelcomeComponent implements OnInit {
 
   checkPinTS(value) {
-    if(value=60160530) {
+    if(value==60160530) {
       document.getElementById("cWelcome").style.visibility = "hidden";
     }
   }

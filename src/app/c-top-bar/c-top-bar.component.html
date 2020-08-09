@@ -1,16 +1,16 @@
 
 <div class="c-top-bar" id="cTopBar">
     <div class="header-bar"><div class="top-header" id="topHeader">Brand A Tracker</div></div>
-    <span class="material-icons" id=menuButton (click)="toggleLeftMenuTS()" title="Menu">menu</span><span class="material-icons" id="pageIcon">info</span><span class="page-title" id="pageTitle">Title</span>
+    <span class="material-icons" id=menuButton (click)="toggleMenuTS('cLeftMenu')" title="Menu">menu</span><span class="material-icons" id="pageIcon">info</span><span class="page-title" id="pageTitle">Title</span>
     <section class="top-bar">
                 <div class="right-items">
                     <i (click)="toggleFullscreenTS()" class="material-icons" id="topBarI" title="Fullscreen">fullscreen</i>
                     <i (click)="toggleFilterMenuTS()" class="material-icons" id="topBarI" title="Filters">tune</i>
-                    <i (click)="toggleRightMenuTS()"class="material-icons" id="topBarI" title="Tool Box">build</i>
-                    <i class="material-icons" id="topBarI" title="Profile">account_box</i>
+                    <i (click)="toggleRightMenuTS()" class="material-icons" id="topBarI" title="Options">settings</i>
+                    <i (click)="toggleProfileMenuTS()" class="material-icons" id="topBarI" title="Profile">account_box</i>
                     <div class="vertical-br" id="topBarI"></div>
                 </div>
-                <i class="material-icons" id="mobileI" title="Settings" (click)="toggleRightMenuTS()">settings</i>
+                <i class="material-icons" id="mobileI" title="Settings" (click)="toggleMenuTS('cRightMenu')">settings</i>
     </section>  
 </div>
 

@@ -69,6 +69,11 @@ body {
   float: right;
 }
 
+#homeIcon {
+  color:rgb(50, 50, 50);
+  float: right;
+}
+
 .nav-title-item {
   vertical-align: 10%;;
   top: -0.25em;

@@ -138,7 +138,7 @@ c-kpi-card {
     background-color: rgb(69, 69, 73);
     margin-bottom: 1.25vh;
     float: top;
-    color: rgb(187, 187, 187);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
     text-align: center;
@@ -314,6 +314,8 @@ c-top-bar {
     }
   }
 
+
+
   @media only screen and (max-height: 500px) {
     content {
         position: absolute;
@@ -327,7 +329,6 @@ c-top-bar {
         left: 0vw;
     }
     .c-cjs-chart {
-        width: 80%;
         top: 20vh;
         display: block;
         overflow: hidden;
@@ -351,8 +352,9 @@ c-top-bar {
         bottom: 5;
     }
     .c-cjs-chart {
+        margin-left: 1.3%;
         visibility: hidden;
-        width: 82%;
+        width: 85%;
         top: 20vh;
         display: block;
     }
@@ -391,6 +393,25 @@ c-top-bar {
     .category {
         width: 97.8vw;     
     }
+    .c-cjs-chart {
+        visibility: hidden;
+        width: 98.7%;
+        top: 20vh;
+        display: block;
+    }
+    
+  }
+
+  @media only screen and (max-width: 500px){
+    .category {
+        width: 97.8vw;     
+    }
+    .c-cjs-chart {
+        visibility: hidden;
+        width: 100%;
+        top: 20vh;
+        display: block;
+    }
     
   }
 
@@ -404,9 +425,6 @@ c-top-bar {
 @media print {
     c-top-bar {
         display:none;
-    }
-    c-left-menu {
-        display: none;
     }
     c-right-menu {
         display: none;
@@ -476,6 +494,269 @@ span {
     position: relative;
     margin-top: 0;
 }
+
+.c-profile-menu::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    padding-right: 1vh;
+  }
+  
+  /* Track */
+  .c-profile-menu::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 0;
+  }
+   
+  /* Handle */
+  .c-profile-menu::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 168, 168);
+    border-radius: 0;
+  }
+  
+  /* Handle on hover */
+  .c-profile-menu::-webkit-scrollbar-thumb:hover {
+    background: rgb(44, 44, 44);
+  }
+  
+  /* fallback */
+  body {
+    top: 0vh;
+  }
+  
+  @font-face {
+    font-display: block;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .text-collection {
+    margin-top: 5vh;
+  }
+  
+  .profile-anchor {
+    position: relative;
+    display: block;
+    margin-top: -1vh;
+  }
+  
+  .profile-title {
+    border:0.05em solid rgb(51, 51, 51);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 1vh;
+    padding-bottom: .3vh;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 0.7vh;
+  }
+
+  #profileTitleIcon {
+    margin-left: 0.3em;
+    padding-top: .5vh;
+    margin-top: 0.7vh;
+    color:white;
+  }
+  
+  #signOutTitleIcon {
+    margin-left: 0.3em;
+    padding-top: .5vh;
+    margin-top: 0.7vh;
+    color:white;
+  }
+  
+  .profile-title-item {
+    vertical-align: 10%;;
+    top: -0.25em;
+    position: relative;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(228, 228, 228);
+  }
+  
+  
+  .c-profile-menu {
+    border:0.05em solid rgb(51, 51, 51);
+      border-top: none;
+      border-right: none;
+      overflow-x: hidden;
+      overflow-y: auto;
+      z-index: 15;
+      right: 0;
+      top: 0vh;
+      height: 100%;
+      position: fixed;
+      background-color: rgb(20, 20, 20);
+      width: 12em;
+      transition: 0.2s;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; 
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    padding-right: 10px;
+    color:rgb(((50, 50, 50)));
+  }
+  
+  .c-profile-icons {
+      margin-left: 0.7vh;
+      left: 0.7vh;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+  span {
+    color:rgb(223, 223, 223);
+  }
+  
+  #leftMi {
+    color:rgb(223, 223, 223);
+  }
+
+  .sign-out-text {
+      position: fixed;
+      margin-top: 1em;
+  }
+  
+  .profile-div { 
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: -1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border:0.05em solid rgb(51, 51, 51);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+    color:rgb(211, 211, 211);
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+  .c-profile-icons::selection {
+    margin-top: 5vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+  .profile-div::selection { 
+    background-color: transparent;
+    color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+  
+  @media only screen and (max-width: 500px) and (max-height: 480px) {
+      .c-profile-menu {
+        border-radius: 0.6vh;
+        z-index: 6;
+        left: 0;
+        background-color: rgb(145, 145, 145);
+        width: 10em;
+        height: 100%;
+        transition: 0.2s;
+        visibility: visible;
+        opacity: 0;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; 
+  
+    }
+  
+    span {
+      font-size: 10px;
+    }
+  
+    span .material-icons {
+      display: none;
+      font-size: 20px;
+    }
+    
+    .profile-div { 
+      font-size: 10px;
+    }
+  
+  }
+  
+  @media only screen and (min-height: 1350px) {
+    .c-profile-menu {
+      border-radius: 0.6vh;
+      z-index: 6;
+      left: 0;
+      background-color: rgb(145, 145, 145);
+      width: 14em;
+      height: 100%;
+      transition: 0.2s;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; 
+  
+  }
+  
+  span {
+    font-size: 20px;
+  }
+  
+  span .material-icons {
+    display: none;
+    font-size: 20px;
+  }
+  
+  .profile-div { 
+    font-size: 20px;
+  }
+  
+  }
 
 
 

@@ -171,41 +171,41 @@
 
 @media only screen and (max-height: 500px) {
     .kpi-title {
-        font-size: 8px;
+        font-size: 12px;
     }
     
     .kpi-score {
-        font-size: 8px;
+        font-size: 12px;
     }
   }
 
   @media only screen and (max-width: 400px) {
     .kpi-title {
-        font-size: 11px;
+        font-size: 12px;
     }
     
     .kpi-score {
-        font-size: 11px;
+        font-size: 12px;
     }
   }
 
   @media only screen and (max-width: 300px) {
     .kpi-title {
-        font-size: 7px;
+        font-size: 10px;
     }
     
     .kpi-score {
-        font-size: 7px;
+        font-size: 10px;
     }
   }
 
   @media only screen and (max-width: 200px) {
     .kpi-title {
-        font-size: 6px;
+        font-size: 10px;
     }
     
     .kpi-score {
-        font-size: 6px;
+        font-size: 10px;
     }
   }
 

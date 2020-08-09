@@ -141,7 +141,7 @@ export class CCjsGranChartComponent implements OnInit {
       }
     }
 
-    if((event.target == "[object HTMLInputElement]" || event.target.id == "leftSpan8" || event.target.id == "kpiDiv7") && event.target.id != "searchInput") {
+    if((event.target == "[object HTMLInputElement]" || event.target.id == "leftSpan8" || event.target.id == "kpiDiv7") && event.target.id != "searchInput" && event.target.id != "pin") {
       if(event.target.id == "kpiDiv7" || event.target.id == "leftSpan8"){
         initValues();
         this.getMeasure(JSONData,event);
