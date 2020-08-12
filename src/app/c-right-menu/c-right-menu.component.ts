@@ -105,8 +105,9 @@ export class CRightMenuComponent implements OnInit {
       c.innerHTML = entry;
       c.setAttribute('style', 
       `
+          overflow-x: none;
           position: absolute;
-          width: 200px;
+          width: 150px;
           font-size: 1vh; 
           font-family: Arial, Helvetica, sans-serif;
           color: color: rgb(27, 27, 27);;

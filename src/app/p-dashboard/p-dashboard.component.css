@@ -692,12 +692,11 @@ span {
       .c-profile-menu {
         border-radius: 0.6vh;
         z-index: 6;
-        left: 0;
-        background-color: rgb(145, 145, 145);
+        right: 0;
         width: 10em;
         height: 100%;
         transition: 0.2s;
-        visibility: visible;
+        visibility: hidden;
         opacity: 0;
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
@@ -727,8 +726,7 @@ span {
     .c-profile-menu {
       border-radius: 0.6vh;
       z-index: 6;
-      left: 0;
-      background-color: rgb(145, 145, 145);
+      right: 0;
       width: 14em;
       height: 100%;
       transition: 0.2s;

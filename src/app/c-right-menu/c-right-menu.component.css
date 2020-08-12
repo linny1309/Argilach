@@ -24,6 +24,7 @@
 
 .c-right-menu {
   overflow-y: auto;
+  overflow-x: none;
   visibility: hidden;
   right: 0;
   position: fixed;
@@ -41,6 +42,10 @@
   border-right: none;
 }
 
+body {
+  overflow-x: none;;
+}
+
 #hiddenDiv {
   visibility: hidden;
 }
@@ -51,6 +56,7 @@
 }
 
 .options-title {
+  overflow-x: none;
   border:0.05em solid rgb(51, 51, 51);
   border-right: none;
   border-left: none;
@@ -81,6 +87,7 @@
 }
 
 .right-div { 
+    overflow-x: none;
     border:0.05em solid rgb(51, 51, 51);
     border-right: none;
     border-left: none;
