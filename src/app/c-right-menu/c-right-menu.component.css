@@ -28,7 +28,7 @@
   visibility: hidden;
   right: 0;
   position: fixed;
-  height: 110%;
+  height: 100%;
   width: 190px;
   background-color: rgb(20, 20, 20);
   z-index: 11;
@@ -43,7 +43,7 @@
 }
 
 body {
-  overflow-x: none;;
+  overflow-x: none;
 }
 
 #hiddenDiv {
