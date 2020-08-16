@@ -228,7 +228,7 @@ c-top-bar {
     }
     .c-cjs-chart {
         visibility: hidden;
-        width: 98.7%;
+        width: 100%;
         top: 20vh;
         display: block;
     }

@@ -13,7 +13,7 @@ import { CCjsRadarChartComponent } from './c-cjs-radar-chart/c-cjs-radar-chart.c
 import { CCjsComboChartComponent } from './c-cjs-combo-chart/c-cjs-combo-chart.component';
 import { CGenTableComponent } from './c-gen-table/c-gen-table.component';
 import { CFbTaskListComponent } from './c-fb-task-list/c-fb-task-list.component';
-import { CFbSignInComponent } from './c-fb-sign-in/c-fb-sign-in.component';
+import { PFbSignInComponent } from './p-fb-sign-in/p-fb-sign-in.component';
 
 
 const routes: Routes = [
@@ -33,8 +33,8 @@ const routes: Routes = [
   { path: 'c-top-bar', component: CTopBarComponent },
   { path: 'c-kpi-card', component: CKpiCardComponent},
 
-  { path: 'c-fb-sign-in', component: CFbSignInComponent },
-  { path: '**', redirectTo: 'c-fb-sign-in', pathMatch: 'full' }
+  { path: 'p-fb-sign-in', component: PFbSignInComponent },
+  { path: '**', redirectTo: 'p-fb-sign-in', pathMatch: 'full' }
 
 ];
 

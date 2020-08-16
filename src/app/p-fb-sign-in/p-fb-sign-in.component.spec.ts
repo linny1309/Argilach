@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CFbSignInComponent } from './c-fb-sign-in.component';
+import { PFbSignInComponent } from './p-fb-sign-in.component';
 
-describe('CFbSignInComponent', () => {
-  let component: CFbSignInComponent;
-  let fixture: ComponentFixture<CFbSignInComponent>;
+describe('PFbSignInComponent', () => {
+  let component: PFbSignInComponent;
+  let fixture: ComponentFixture<PFbSignInComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CFbSignInComponent ]
+      declarations: [ PFbSignInComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CFbSignInComponent);
+    fixture = TestBed.createComponent(PFbSignInComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

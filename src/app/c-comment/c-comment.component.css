@@ -32,6 +32,7 @@ body {
 }
 
 .desc-title {
+    padding: 0.2em;
     border-radius: 0.3vh;
     left: 5vh;
     position: absolute;
@@ -40,7 +41,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.3vh;
     margin-left: 1vh;;
-    padding: .4vh;
     top: 0;
     white-space: nowrap;
 }
@@ -89,8 +89,7 @@ p {
 }
 
 #descIcon {
-    border-top-left-radius: 0.6vh;
-    border-bottom-right-radius: 0.6vh;
+    border-radius: 0.6vh;
     top: 0;
     float: top;
     position: absolute;
@@ -98,7 +97,7 @@ p {
     color: white;
     background-color: rgba(24, 23, 23, 0.877);
     font-size: 3vh;
-    padding: .3vh;
+    padding: .1em;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -218,8 +217,8 @@ p {
     }
 
     .c-comment {
-        margin-left: 0%;
-        width: 99%;
+        margin-left: 0.5%;
+        width: 98.5%;
     }
 
     .desc-container {

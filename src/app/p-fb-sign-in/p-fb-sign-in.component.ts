@@ -1,15 +1,15 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
-import { FirebaseService } from '../services/firestore..service';
+import { FirebaseService } from '../s-services/firestore..service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'c-fb-sign-in',
-    templateUrl: './c-fb-sign-in.component.html',
-    styleUrls: [ './c-fb-sign-in.component.scss' ]
+    selector: 'p-fb-sign-in',
+    templateUrl: './p-fb-sign-in.component.html',
+    styleUrls: [ './p-fb-sign-in.component.scss' ]
 })
-export class CFbSignInComponent implements OnInit, OnDestroy {
+export class PFbSignInComponent implements OnInit, OnDestroy {
     public signInForm: FormGroup;
     public signInFailed: boolean;
     public userAuth: Subscription;

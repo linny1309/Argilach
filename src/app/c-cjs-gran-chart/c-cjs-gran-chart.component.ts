@@ -21,6 +21,30 @@ var cur6Measure = 0;
 var x;
 var sum;
 
+var tempData = JSONData;
+const staticData = JSONData;
+const Chart = require("chart.js");
+
+var jsonLength = Object.keys(JSONData).length;
+var finalData;
+var kpiScore;
+var kpiScorePrev
+
+var mc;
+var chart;
+var ng = 0;
+
+var qCount = 0;
+
+var dimensions = ["male","female","A+","A-","B+","B-","AB+","AB-","O+","O-","stable","critical"];
+var dimensionBool = [true,true,true,true,true,true,true,true,true,true,true,true]
+
+var critical = true;
+var stable = true;
+
+var vp = document.getElementsByClassName("vs-net");
+let vsNet = [300,-1,3,2,2.2,-5,4,16];
+
 function initValues() {
   for(x = 0; x < Object.keys(JSONData).length; x++) {
     measures.push(JSONData[x].qty_ordered);
@@ -53,32 +77,25 @@ function initValues() {
   var obj = ks[0];
 }
 
-
-var tempData = JSONData;
-const staticData = JSONData;
-const Chart = require("chart.js");
-
-var jsonLength = Object.keys(JSONData).length;
-var finalData;
-var kpiScore;
-var kpiScorePrev
-
-var mc;
-var chart;
-
-var qCount = 0;
-
-var dimensions = ["male","female","A+","A-","B+","B-","AB+","AB-","O+","O-","stable","critical"];
-var dimensionBool = [true,true,true,true,true,true,true,true,true,true,true,true]
-
-var critical = true;
-var stable = true;
-
 function mediaCheck(m) {
   if (m.matches) { // If media query matches
     mc = 0;
   } else {
     mc = 1;
+  }
+}
+
+function setArrows(n) {
+  var element = vp[0];
+
+  if(n < 0) {
+    element.innerHTML+= "&#9660;"
+  }
+  else if (n == 0) {
+    element.innerHTML+= "";
+  }
+  else {
+    element.innerHTML+= "&#9650";
   }
 }
 
@@ -219,6 +236,8 @@ export class CCjsGranChartComponent implements OnInit {
         else {
           objP.style.backgroundColor = "green";
         }
+
+        setArrows(finalRawMeasure[5] - finalRawMeasure[4]);
 
       chart.data.datasets[0].data = finalRawMeasure;
       chart.update();

@@ -31,7 +31,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { CFbTaskListComponent } from './c-fb-task-list/c-fb-task-list.component';
-import { CFbSignInComponent } from './c-fb-sign-in/c-fb-sign-in.component';
+import { PFbSignInComponent } from './p-fb-sign-in/p-fb-sign-in.component';
 import { CWelcomeComponent } from './c-welcome/c-welcome.component';
 
 const firebaseConfig = {
@@ -69,7 +69,7 @@ const firebaseConfig = {
     CCjsGranChartComponent,
     CSearchComponent,
     CFbTaskListComponent,
-    CFbSignInComponent,
+    PFbSignInComponent,
     CWelcomeComponent,
   ],
   imports: [

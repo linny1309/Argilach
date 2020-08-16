@@ -1,5 +1,5 @@
 import { Component, OnInit, ɵɵresolveBody, OnDestroy } from '@angular/core';
-import { FirebaseService } from '../services/firestore..service';
+import { FirebaseService } from '../s-services/firestore..service';
 import { FormGroup, FormBuilder, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { Router, RouterLink } from '@angular/router';
