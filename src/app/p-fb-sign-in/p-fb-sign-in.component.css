@@ -3,8 +3,19 @@
 }
 
 .google-sign-in {
-    width: 160px;
-    height: 1000px;
-    background-image: url("google-button.png");
+    border-radius: 0.3em;
+    width: 177.5px;
+    height: 46px;
     cursor: pointer;
+    background-color: white;
+}
+
+.google-text {
+    color: rgb(78, 78, 78);
+    border-radius: 0.3em;
+    position: fixed;
+    margin-left: 1.9em;
+    margin-top: -1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }

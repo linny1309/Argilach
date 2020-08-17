@@ -1,36 +1,30 @@
 <head>
     <meta name="google-signin-client_id" content=".apps.googleusercontent.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
 
 <div style="width: 100%;display: flex;justify-content: center;">
-    <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgb(148, 148, 148)">Argilach</h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgb(148, 148, 148); font-size: 30px;">Argilach</h1>
 </div>
 <div class="sign-in-page" style="width: 100%;display: flex;justify-content: center;">
     <div>
     <br>
         <form [formGroup]="signInForm" (ngSubmit)="signIn(signInForm)">
-            <input type="email" name="email" formControlName="email" placeholder="Email">
+            <input class="email" type="email" name="email" formControlName="email" placeholder="Email" style="height: 20px; color: white; text-emphasis: none; text-decoration: none; text-transform: none;">
             <br>
             <br>
-            <input type="password" name="password" formControlName="password" placeholder="Password">
+            <input class="password" type="password" name="password" formControlName="password" placeholder="Password" style="height: 20px; color: white">
             <br>
             <br>
             <button>Sign In</button>
         </form>
         <br>
-        <div (click)="fs.googleSignIn()">
-            <div class="col s12 m6 offset-m3 center-align">
-                <a class="oauth-container btn darken-4 white black-text" style="text-transform:none">
-                    <div class="left">
-                        <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in" 
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-                    </div>
-                    Login with Google
-                </a>
+            <div (click)="fs.googleSignIn()" class="google-sign-in">
+                <div>
+                    <div class="left"><img width="20px" style="margin-top:12px; margin-left:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" /></div>
+                    <span class="google-text">Login with Google</span>
+                </div>
             </div>
-        </div>
     </div>
 </div>
 <div style="width: 100%;display: flex;justify-content: center;">
