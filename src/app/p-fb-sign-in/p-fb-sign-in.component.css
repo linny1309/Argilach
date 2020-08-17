@@ -1,3 +1,10 @@
 .sing-in-failed {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.google-sign-in {
+    width: 160px;
+    height: 1000px;
+    background-image: url("google-button.png");
+    cursor: pointer;
+}
