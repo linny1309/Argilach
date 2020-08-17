@@ -28,6 +28,12 @@ export class FirebaseService {
         const credential = await this.auth.signInWithPopup(provider);
         return this.updateUserData(credential.user);
       }
+
+    async microsoftSignIn() {
+        const provider = new auth.OAuthProvider('microsoft.com');
+        const credential = await this.auth.signInWithPopup(provider);
+        return this.updateUserData(credential.user);
+        }
     
       private updateUserData(user) {
         // Sets user data to firestore on login

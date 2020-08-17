@@ -10,10 +10,10 @@
     <div>
     <br>
         <form [formGroup]="signInForm" (ngSubmit)="signIn(signInForm)">
-            <input class="email" type="email" name="email" formControlName="email" placeholder="Email" style="height: 20px; color: white; text-emphasis: none; text-decoration: none; text-transform: none;">
+            <input class="email" type="email" name="email" formControlName="email" placeholder="Email" style="height: 20px; text-emphasis: none; text-decoration: none; text-transform: none;">
             <br>
             <br>
-            <input class="password" type="password" name="password" formControlName="password" placeholder="Password" style="height: 20px; color: white">
+            <input class="password" type="password" name="password" formControlName="password" placeholder="Password" style="height: 20px;">
             <br>
             <br>
             <button>Sign In</button>
@@ -25,8 +25,24 @@
                     <span class="google-text">Login with Google</span>
                 </div>
             </div>
+            <br>
+            <div (click)="fs.microsoftSignIn()" class="microsoft-sign-in">
+                <div>
+                    <div class="left"><img width="60px" style=" margin-left:-16px" src="http://logok.org/wp-content/uploads/2014/12/Windows-logo-880x645.png" /></div>
+                    <span class="microsoft-text" style="margin-top:-35px; margin-left: 30px; font-size: 14.5px;">Login with Microsoft</span>
+                </div>
+            </div>
+            <br>
+            <div class="github-sign-in">
+                <div>
+                    <div class="left"><img width="40px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" /></div>
+                    <span class="github-text" style="margin-top:-30px; margin-left: 42px; font-size: 14.5px;">Login with GitHub</span>
+                </div>
+            </div>          
+            <br>
     </div>
 </div>
 <div style="width: 100%;display: flex;justify-content: center;">
+    <br>
     <span class="sign-in-failed" style="font-family: Arial, Helvetica, sans-serif; color: rgb(148, 148, 148); font-weight: bold;" *ngIf="signInFailed">Sign in failed. Please try again.</span>
 </div>
