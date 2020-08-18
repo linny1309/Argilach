@@ -246,6 +246,8 @@ export class CCjsGranChartComponent implements OnInit {
 
 
   getQuarter() {
+    var quarter = 3;
+    var year = 2019;
     var quarters = [];
     var n;
     var qCount = tempData[tempData.length - 1].qtr;
@@ -260,13 +262,23 @@ export class CCjsGranChartComponent implements OnInit {
     if(quarters.length < 13) {
         for(n = 0; n < qCount; n++) {
           quarters.push(tempData[n].qtr);
-          chart.data.labels.push(n+1);
+          chart.data.labels.push("Q"+quarter+" "+year);
+          if(quarter == 4) {
+            quarter = 0;
+            year++;
+          }
+          quarter++;
         }
       }
       else {
         quarters.slice(quarters.length - 13 ,quarters.length);
         for(n = quarters.length - 13; n < quarters.length; n++) {
-          chart.data.labels.push(quarters[n]);
+          chart.data.labels.push("Q"+quarter+" "+year);
+          if(quarter == 4) {
+            quarter = 0;
+            year++;
+          }
+          quarter++;
         }
       }
   }

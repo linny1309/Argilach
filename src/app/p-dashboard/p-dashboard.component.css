@@ -339,9 +339,6 @@ c-top-bar {
     }
   }
 
-  @media only screen and (max-width: 1400px) {
-  }
-
   @media only screen and (max-width: 1000px) and (max-height: 475px) {
     c-comment {
         position: fixed;
@@ -370,6 +367,7 @@ c-top-bar {
         bottom: 5;
     }
     .c-cjs-chart {
+        margin-left: 0.8%;
         visibility: hidden;
         width: 96vw; 
         top: 20vh;

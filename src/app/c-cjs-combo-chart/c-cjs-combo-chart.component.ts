@@ -28,7 +28,7 @@ var data =  {
       min: 0,
       yAxisID: 'B',
   }],
-  labels: ['Q1', 'Q2', 'Q3', 'Q4']
+  labels: ['Q1 2020', 'Q2 2020', 'Q3 2020', 'Q4 2020']
 }
 
 var options = {
