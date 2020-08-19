@@ -1,3 +1,37 @@
+.visual-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    padding-right: 1vh;
+  }
+  
+  /* Track */
+  .visual-content::-webkit-scrollbar-track {
+    height: 99%;
+    background: rgba(44, 44, 44, 0);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: .75em;
+    border-bottom-left-radius: .75em;
+  }
+   
+  /* Handle */
+  .visual-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: .75em;
+    border-bottom-left-radius: .75em;
+  }
+  
+  /* Handle on hover */
+  .visual-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(66, 66, 66, 0);
+  }
+
+.title {
+    visibility: hidden;
+}
+
 body {
     position: absolute;
     top: 0;
@@ -183,7 +217,7 @@ c-top-bar {
     z-index: 20;
 }
 
-.content {
+.visual-content {
     width: 95%;
     overflow: hidden;
 }
@@ -254,7 +288,7 @@ c-top-bar {
         font-size: 0.5vh;
     }
 
-    .content {
+    .visual-content {
         overflow: hidden;
     }
 
@@ -317,7 +351,7 @@ c-top-bar {
 
 
   @media only screen and (max-height: 500px) {
-    content {
+    .visual-content {
         position: absolute;
         top: 0;
         left: 0;

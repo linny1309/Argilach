@@ -157,6 +157,8 @@ function resetKpis() {
 })
 export class PDashboardComponent implements OnInit {
 
+  title = 'Argilach';
+
   public fsData: Array<any>;
   public taskForm: FormGroup;
   public userAuth: Subscription;

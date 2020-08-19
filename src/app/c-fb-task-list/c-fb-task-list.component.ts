@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
     selector: 'c-fb-task-list',
     templateUrl: './c-fb-task-list.component.html',
-    styleUrls: [ './c-fb-task-list.component.scss' ]
+    styleUrls: [ './c-fb-task-list.component.css' ]
 })
 export class CFbTaskListComponent implements OnInit, OnDestroy {
     public fsData: Array<any>;

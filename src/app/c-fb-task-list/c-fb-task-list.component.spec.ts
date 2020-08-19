@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CFbTaskListComponent } from './c-fb-task-list.component';
 
+/*
 describe('CFbTaskListComponent', () => {
   let component: CFbTaskListComponent;
   let fixture: ComponentFixture<CFbTaskListComponent>;
@@ -23,3 +24,4 @@ describe('CFbTaskListComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+*/

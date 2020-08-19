@@ -31,9 +31,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/javascript/p-dashboard.component.js",
-              "src/assets/javascript/styles.js",
-              "./node_modules/jquery/dist/jquery.min.js"
+              "src/assets/javascript/p-dashboard.component.js"
             ]
           },
           "configurations": {
@@ -100,8 +98,7 @@
               "src/app/c-top-bar"
             ],
             "styles": [
-              "src/styles.css",
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",

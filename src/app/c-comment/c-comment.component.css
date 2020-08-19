@@ -1,4 +1,34 @@
-/* fallback */
+.desc-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    padding-right: 1vh;
+  }
+  
+  /* Track */
+  .desc-container::-webkit-scrollbar-track {
+    height: 99%;
+    background: rgb(44, 44, 44);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: .75em;
+    border-bottom-left-radius: .75em;
+  }
+   
+  /* Handle */
+  .desc-container::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: .75em;
+    border-bottom-left-radius: .75em;
+  }
+  
+  /* Handle on hover */
+  .desc-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(66, 66, 66);
+  }
+
+/* No rendering of Icons */
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -18,7 +48,7 @@ body {
     padding-top: 1vw;
     height: 53vh;
     background-color: rgba(54, 54, 54);
-    right: 0.69vh;
+    right: 1.25vh;
     visibility: visible;
     transition: 0.1s;
     opacity: 1;
@@ -72,7 +102,7 @@ body {
 
 .desc-container {
     border:0.05em solid rgb(19, 19, 19);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 4.7px 4.7px;
     margin-left: .5%;
     width: 98%;
     background-color: rgb(124, 124, 124);
@@ -171,6 +201,7 @@ p {
   @media only screen and (min-width: 1000px) {
     .c-comment {
         width: 23.6%;
+        margin-right: .11px;
     }
     .desc-container {
         height: 45vh;
@@ -182,7 +213,7 @@ p {
         height: 45vh;
     }
     .c-comment {
-        width: 22.8%;
+        width: 23.6%;
     }
   }
 

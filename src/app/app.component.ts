@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from './s-services/auth.service';
 import 'material-icons/css/material-icons.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 @Component({
   selector: 'app-root',

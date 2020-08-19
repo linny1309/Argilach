@@ -5,7 +5,6 @@ var nowScrollTop;
 document.firstElementChild.style.zoom = "reset"
 
   window.onchange = function() {
-  
     m = window.matchMedia("(max-width: 1000px)");
     this.mediaCheck(m);
     };
